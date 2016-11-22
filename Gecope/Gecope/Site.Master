@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GECOPE - <%: Page.Title %></title>
+    <title>GECOPE</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -58,49 +58,16 @@
                     </button>
                     <a id="A1" class="navbar-brand" runat="server" href="~/">GECOPE</a>
                 </div>
+
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cadastros<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Associados<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="Cad_Colonias.aspx">Colônias</a></li>
-                                <li><a href="#">Embarcações</a></li>
-                                <li><a href="Cad_Associados.aspx">Associados</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Produtos<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Estoque</a></li>
-                                <li><a href="#">Repasses</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Resumo de Repasses</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mensalidades<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Mens. e Cont. Sindicais</a></li>
-                                <li><a href="#">Rateio</a></li>
-                                <li><a href="#">Relatórios</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Financeiro<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Contas a Pagar</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sistema<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Usuários e Senhas</a></li>
-                                <li><a href="#">Parâmetros do Sistema</a></li>
+                                <li><a href="Cad_Colonias.aspx">Listagem</a></li>
+                                
+                                <li><a href="Cad_Associados.aspx">Cadastrar Novo</a></li>
                             </ul>
                         </li>
                         

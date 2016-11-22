@@ -7,8 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace colonias
 {
-    public partial class colonias_list : System.Web.UI.Page
+    public partial class Cadastro_Listagem : Page
     {
+        string Colonia_ID = "1";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -19,14 +21,16 @@ namespace colonias
 
         public void atualiza_grid()
         {
-            // listagem de funcionarios por cliente
+            string stringSelect = @"select Nome,Apelido from Tbl_Associados" +
+                " where ID_Colonia = " + Colonia_ID +
+                " order by Nome";
+
+            // listagem
             OperacaoBanco operacao = new OperacaoBanco();
-            string stringSelect = "select * from Tbl_Associados order by Nome";
             System.Data.SqlClient.SqlDataReader rcrdset = operacao.Select(stringSelect);
-            GridView2.DataSource = rcrdset;
-            GridView2.DataBind();
+            GridAssociados.DataSource = rcrdset;
+            GridAssociados.DataBind();
             ConexaoBancoSQL.fecharConexao();
         }
-
     }
 }

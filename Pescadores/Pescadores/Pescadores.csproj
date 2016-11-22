@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{867A660F-F7E6-4B05-BB24-4DA1EC1AF212}</ProjectGuid>
+    <ProjectGuid>{BDD6EDF8-7455-4960-B6F5-E59E3C9D5B29}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>colonias</RootNamespace>
-    <AssemblyName>colonias</AssemblyName>
+    <RootNamespace>Pescadores</RootNamespace>
+    <AssemblyName>Pescadores</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -24,7 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <ApplicationInsightsResourceId>/subscriptions/1d393b78-8729-43d0-8983-e65f903e3351/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/colonias</ApplicationInsightsResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/1d393b78-8729-43d0-8983-e65f903e3351/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/Pescadores</ApplicationInsightsResourceId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -77,16 +77,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.ReportViewer.Common.resources, Version=12.0.0.0, Culture=de, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.ReportViewer.Common.resources\v4.0_12.0.0.0_pt_89845dcd8080cc91\Microsoft.ReportViewer.Common.resources.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.ReportViewer.WebForms.resources, Version=12.0.0.0, Culture=de, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.ReportViewer.WebForms.resources\v4.0_12.0.0.0_pt_89845dcd8080cc91\Microsoft.ReportViewer.WebForms.resources.dll</HintPath>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -144,12 +134,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ErroDefault.aspx" />
+    <Content Include="Painel.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Cadastro_Listagem.aspx" />
     <Content Include="Cadastro_Novo.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -160,18 +152,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="dbgecopeDataSet.xsc">
-      <DependentUpon>dbgecopeDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="dbgecopeDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbgecopeDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="dbgecopeDataSet.xss">
-      <DependentUpon>dbgecopeDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="Properties\PublishProfiles\colonias.pubxml" />
+    <None Include="Properties\PublishProfiles\Pescadores9386.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -222,6 +203,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErroDefault.aspx.cs">
+      <DependentUpon>ErroDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErroDefault.aspx.designer.cs">
+      <DependentUpon>ErroDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Painel.aspx.cs">
+      <DependentUpon>Painel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Painel.aspx.designer.cs">
+      <DependentUpon>Painel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -246,10 +241,12 @@
       <DependentUpon>Cadastro_Novo.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConexaoBancoSQL.cs" />
-    <Compile Include="dbgecopeDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbgecopeDataSet.xsd</DependentUpon>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -288,9 +285,6 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="FichaAssoc.rdlc" />
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -304,9 +298,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51563</DevelopmentServerPort>
+          <DevelopmentServerPort>49522</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51563/</IISUrl>
+          <IISUrl>http://localhost:49522/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
