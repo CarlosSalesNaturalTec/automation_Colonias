@@ -72,6 +72,8 @@
                             </ul>
                         </li>
 
+                        <li><a id="A2" runat="server" href="Suporte.aspx">Suporte</a></li>
+
                     </ul>
                 </div>
             </div>

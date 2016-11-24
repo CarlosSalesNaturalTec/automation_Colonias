@@ -136,9 +136,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FichaAssociado.aspx" />
     <Content Include="ErroDefault.aspx" />
     <Content Include="Painel.aspx" />
-    <Content Include="About.aspx" />
+    <Content Include="Suporte.aspx" />
     <Content Include="Cadastro_Listagem.aspx" />
     <Content Include="Cadastro_Novo.aspx" />
     <Content Include="Contact.aspx" />
@@ -203,6 +204,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FichaAssociado.aspx.cs">
+      <DependentUpon>FichaAssociado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FichaAssociado.aspx.designer.cs">
+      <DependentUpon>FichaAssociado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ErroDefault.aspx.cs">
       <DependentUpon>ErroDefault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -218,12 +226,12 @@
       <DependentUpon>Painel.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Suporte.aspx.cs">
+      <DependentUpon>Suporte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Suporte.aspx.designer.cs">
+      <DependentUpon>Suporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Cadastro_Listagem.aspx.cs">

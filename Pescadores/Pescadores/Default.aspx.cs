@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Pescadores
 {
@@ -27,7 +23,7 @@ namespace Pescadores
             {
                 if (inputSenha.Text == Convert.ToString(rcrdset[2]))
                 {
-                    Session["Colonia_ID"] = Convert.ToString(rcrdset[0]);
+                    Session["IDCol"] = "4"; //ATENÇÃO - FIXO . ALTERAR A CADA COLONIA
                     Session["Colonia_Nome"] = Convert.ToString(rcrdset[3]);
                     Response.Redirect("Painel.aspx");
                 }

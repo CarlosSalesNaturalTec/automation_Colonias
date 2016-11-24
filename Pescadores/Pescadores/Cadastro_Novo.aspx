@@ -565,17 +565,12 @@
 
     <!-- 15 - Cabeçalho -->
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-4 col-md-12">
             <asp:Label ID="Label77" runat="server" Text="Opnião melhoria atendimento"></asp:Label>
         </div>
-        
     </div>
     <!-- 15 - Campos -->
-    <div class="row">
-        <div class="col-sm-2">
-            <asp:TextBox ID="txtOpniao" runat="server"></asp:TextBox>
-        </div>        
-    </div>  
+    <asp:TextBox ID="txtOpniao" runat="server" Width="800" ></asp:TextBox>
 
     <p></p>
     <asp:Button ID="Button1" runat="server" Text="Salvar" OnClick="BtSalvar" />    

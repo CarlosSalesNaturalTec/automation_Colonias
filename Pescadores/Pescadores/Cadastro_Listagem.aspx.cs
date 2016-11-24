@@ -6,23 +6,22 @@ namespace Pescadores
 {
     public partial class Cadastro_Listagem : Page
     {
-        int Colonia_ID;
-        string Associado_ID;
+
+        string IdColonia;
+        string IdAssoc;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                // tenta identificar se houve login. caso contrário vai para página de erro
-                Colonia_ID = Int32.Parse(Session["Colonia_ID"].ToString());
-
+                IdColonia = "4"; //ATENÇÃO - CORRIGIR - FIXO
             }
         }
 
         public void atualiza_grid()
         {
             string stringSelect = @"select Nome,Apelido,ID_Associado from Tbl_Associados" +
-                " where (ID_Colonia = " + Colonia_ID +
+                " where (ID_Colonia = " + IdColonia +
                 " and nome LIKE '" + txtPesquisa.Text + "%') order by Nome";
 
             // listagem
@@ -45,9 +44,10 @@ namespace Pescadores
 
         protected void GridAssociados_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblAssociado.Text = GridAssociados.SelectedRow.Cells[0].Text;
-            Associado_ID = GridAssociados.SelectedRow.Cells[2].Text;
+            IdAssoc = GridAssociados.SelectedRow.Cells[2].Text;
 
+            lblAssociado.Text = IdAssoc + " - " + GridAssociados.SelectedRow.Cells[0].Text;
+            
             Bt_Alterar.Visible = true;
             Bt_Imprimir.Visible = true;
             Bt_Excluir.Visible = true;
@@ -66,8 +66,16 @@ namespace Pescadores
 
         protected void BtExcluir(object sender, EventArgs e)
         {
+
+            string idc = IdAssoc;
+            string stringDelete = "delete from Tbl_Associados where ID_Associado = " + idc;
+
+            lblAssociado.Text = stringDelete;
+
             OperacaoBanco operacao = new OperacaoBanco();
-            Boolean deletar = operacao.Delete("delete from Tbl_Associados where ID_Associado=" + Associado_ID);
+            Boolean deletar = operacao.Delete(stringDelete);
+            ConexaoBancoSQL.fecharConexao();
+
             if (deletar == true)
             {
                 Response.Write("<script>alert('Excluido');</script>");
@@ -77,16 +85,14 @@ namespace Pescadores
             {
                 Response.Write("<script>alert('ERRO ao excluir. TENTE NOVAMENTE');</script>");
             }
-            ConexaoBancoSQL.fecharConexao();
 
         }
 
         protected void BtImprimir(object sender, EventArgs e)
         {
-
+            Session["idficha"] = "18";
+            Response.Redirect("FichaAssociado.aspx");
         }
-
-
 
     }
 }

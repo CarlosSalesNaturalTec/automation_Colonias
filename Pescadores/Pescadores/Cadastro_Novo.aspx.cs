@@ -5,20 +5,18 @@ namespace Pescadores
 {
     public partial class Cadastro_Novo : Page
     {
-
-        string Colonia_Nome = "", Colonia_UF = "";
-        int Colonia_ID;
+        string ColoniaNome = "", ColoniaUF = "";
+        string IdColonia = "4";   // ATENÇÃO FIXO - ALTERAR A CADA COLONIA
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 // tenta identificar se houve login. caso contrário vai para página de erro
-                Colonia_ID = Int32.Parse(Session["Colonia_ID"].ToString());
-                Colonia_Nome = Session["Colonia_Nome"].ToString();
-                Colonia_UF = "BA";
+                ColoniaNome = Session["Colonia_Nome"].ToString();
+                ColoniaUF = "BA";
 
-                lblColonia.Text = "Colônia: " + Colonia_ID + " - " + Colonia_Nome;
+                lblColonia.Text = "Colônia: " + IdColonia + " - " + ColoniaNome;
 
             }
 
@@ -40,9 +38,9 @@ namespace Pescadores
                     "possui_Energia,possui_Telefone,possui_esgoto,possui_computador,pessoas_Resid, pessoas_Menores, " +
                     "pessoas_aposentados,renda_mensal,outra_atividade,renda_outra,valor_Seguro_desemprego,valor_bolsa_familia, " +
                     "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao " +
-                    ") VALUES (" + Colonia_ID +
-                    ",'" + txtNome.Text + "', '" + txtApelido.Text + "', '" + Colonia_Nome + "', '" + txtEndereco.Text +
-                    "', '" + txtBairro.Text + "', '" + txtCEP.Text + "', '" + txtMunicipio.Text + "', '" + Colonia_UF + "', '" + txtPai.Text + "', " +
+                    ") VALUES (" + IdColonia  +
+                    ",'" + txtNome.Text + "', '" + txtApelido.Text + "', '" + ColoniaNome + "', '" + txtEndereco.Text +
+                    "', '" + txtBairro.Text + "', '" + txtCEP.Text + "', '" + txtMunicipio.Text + "', '" + ColoniaUF + "', '" + txtPai.Text + "', " +
                     "'" + txtMae.Text + "', '" + txtNascimento.Text + "', '" + txtNaturalidade.Text + "', '" + txtNacionalidade.Text + "', " +
                     "'" + txtEscolaridade.Text + "', " +
                     "'" + txtCPF.Text + "', " +
