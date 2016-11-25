@@ -19,6 +19,14 @@
         <asp:Button ID="Bt_Alterar" runat="server" Text="Alterar" OnClick="BtAlterar" Visible="false" />
         <asp:Button ID="Bt_Excluir" runat="server" Text="Excluir" OnClick="BtExcluir" Visible="false" />
         <asp:Button ID="Bt_Imprimir" runat="server" Text="Imprimir" OnClick="BtImprimir" Visible="false" />
+
+        <p class="text-danger">
+            <asp:Label ID="lblmsg" runat="server"></asp:Label>
+        </p>
+
+        <asp:Button ID="BtConfirmar" runat="server" Text="Confirmar" OnClick="Bt_Confirmar" Visible="false" />
+        <asp:Button ID="BtDesistir" runat="server" Text="Desistir" OnClick="Bt_Desistir" Visible="false" />
+
     </div>
 
     <!-- Grid -->

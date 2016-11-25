@@ -63,14 +63,36 @@ namespace Pescadores
 
         protected void BtExcluir(object sender, EventArgs e)
         {
-
             if (lblID.Text == "")
             {
                 Response.Write("<script>alert('Selecione um Associado');</script>");
                 return;
             }
 
+            Bt_Alterar.Visible = false;
+            Bt_Excluir.Visible = false;
+            Bt_Imprimir.Visible = false;
 
+            lblmsg.Text = "ATENÇÃO! Confirma Exclusão ?";
+
+            BtConfirmar.Visible = true;
+            BtDesistir.Visible = true;
+
+        }
+
+        protected void Bt_Desistir(object sender, EventArgs e)
+        {
+            lblmsg.Text = "";
+            BtConfirmar.Visible = false;
+            BtDesistir.Visible = false;
+
+            Bt_Alterar.Visible = true;
+            Bt_Excluir.Visible = true;
+            Bt_Imprimir.Visible = true;
+        }
+
+        protected void Bt_Confirmar(object sender, EventArgs e)
+        {
             //string idc = IdAssoc;
             string stringDelete = "delete from Tbl_Associados where ID_Associado = " + lblID.Text;
             OperacaoBanco operacao = new OperacaoBanco();
@@ -87,6 +109,14 @@ namespace Pescadores
             {
                 Response.Write("<script>alert('ERRO ao excluir. TENTE NOVAMENTE');</script>");
             }
+
+            Bt_Alterar.Visible = false;
+            Bt_Excluir.Visible = false;
+            Bt_Imprimir.Visible = false;
+
+            lblmsg.Text = "";
+            BtConfirmar.Visible = false;
+            BtDesistir.Visible = false;
 
         }
 
