@@ -2,9 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+    <h4><asp:Label ID="lblColonia" runat="server"></asp:Label> - ID:<asp:Label ID="lblIDColonia" runat="server"></asp:Label></h4>
+
     <h3>ASSOCIADOS CADASTRADOS</h3>
 
-    <p>Nome do Associado (completo ou parcial)</p>
+    <p>Digite o Nome do Associado (completo ou parcial)</p>
     <asp:TextBox ID="txtPesquisa" runat="server"></asp:TextBox>
     <asp:Button ID="Button1" runat="server" Text="Consultar" OnClick="BtPesquisar" />
     
@@ -12,7 +14,7 @@
 
     <div class="well">
         <p class="text-danger">
-            <asp:Label ID="lblAssociado" runat="server"></asp:Label>
+            <asp:Label ID="lblAssociado" runat="server"></asp:Label>-<asp:Label ID="lblID" runat="server"></asp:Label>
         </p>
         <asp:Button ID="Bt_Alterar" runat="server" Text="Alterar" OnClick="BtAlterar" Visible="false" />
         <asp:Button ID="Bt_Excluir" runat="server" Text="Excluir" OnClick="BtExcluir" Visible="false" />

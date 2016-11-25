@@ -9,7 +9,8 @@
 
     <h3  class="text-danger">
         <asp:Label ID="lblColonia" runat="server" Text=""></asp:Label></h3>
-    <p></p>
+    <br />
+    <br />
 
     <asp:Image ID="Image1" runat="server" ImageUrl="http://www.fepesba.com.br/wp-content/uploads/2016/05/topo.png" Width="95%" />
 

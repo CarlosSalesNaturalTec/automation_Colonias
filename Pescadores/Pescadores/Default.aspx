@@ -16,14 +16,14 @@
                         <div class="form-group">
                             <label for="inputUser" class="col-lg-2 control-label">Usuário</label>
                             <div class="col-lg-10">
-                                <asp:TextBox ID="inputUser" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox ID="inputUser" runat="server" Text="valenca" CssClass="form-control"></asp:TextBox>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputSenha" class="col-lg-2 control-label">Senha</label>
                             <div class="col-lg-10">
-                                <asp:TextBox ID="inputSenha" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox ID="inputSenha" runat="server" CssClass="form-control" Text="123" TextMode="Password"></asp:TextBox>
                             </div>
                         </div>
 
