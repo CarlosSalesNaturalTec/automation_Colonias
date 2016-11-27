@@ -27,8 +27,17 @@ namespace Pescadores
                     "Titulo,Titulo_Zona,Titulo_Secao, " +
                     "PIS,NIT,CEI, " +
                     "Sexo,Estado_Civil,Telefone,email, " +
-                    "CTPS,RGP,RGP_Registro,RGP_emissor " +
-                    "from Tbl_Associados where ID_Associado = " + lblIDAssociado.Text);
+                    "CTPS,RGP,RGP_Registro,RGP_emissor, " +
+                    "Profissao,Categoria,AreaAtuacao,   " +
+                    "Relacao_Trabalho,Embarcacao_Utiliza,Embarcacao_Nome,Embarcacao_Prop,Embarcacao_Tipo," +
+                    "Embarcacao_Tamanho,Embarcacao_PRopulsao,Embarcacao_capitania,RGP_MPA, " +
+                    "Arte_Principal,Arte_Dono, Arte_Esepcies ,Arte_locais_venda ,Arte_comercializado ," +
+                    "Trabalho_dias,Trabalho_duracao ,Trabalho_producao ,Trabalho_valor_venda ,Trabalho_consumido,  " +
+                    "Dependentes, Filhos_Escola, Seguro_Defeso, Bolsa_Familia, " +
+                    "Tipo_Resid, possui_Agua_Encanada, possui_Energia , possui_Telefone ,possui_esgoto , possui_computador, " +
+                    "pessoas_Resid, pessoas_Menores , pessoas_aposentados " +
+                    "from Tbl_Associados " + 
+                    "where ID_Associado = " + lblIDAssociado.Text);
 
             while (dados.Read())
             {
@@ -72,7 +81,55 @@ namespace Pescadores
                 lblRGP.Text = Convert.ToString(dados[28]);
                 lblRGP1.Text = Convert.ToString(dados[29]);
                 lblRGPEMissor.Text = Convert.ToString(dados[30]);
-                
+
+                lblprofissao.Text = Convert.ToString(dados[31]);
+                lblcategoria.Text = Convert.ToString(dados[32]);
+                lblareaatuacao.Text = Convert.ToString(dados[33]);
+
+                lblrelacao.Text = Convert.ToString(dados[34]);
+                lblutilizaembarca.Text = Convert.ToString(dados[35]);
+                lblnomeEmbarca.Text = Convert.ToString(dados[36]);
+                lblProp.Text = Convert.ToString(dados[37]);
+                lblTipo.Text = Convert.ToString(dados[38]);
+                lblTamanho.Text = Convert.ToString(dados[39]);
+
+                lblProp.Text = Convert.ToString(dados[40]);
+                lblCapPortos.Text = Convert.ToString(dados[41]);
+                lblRGPMPA.Text = Convert.ToString(dados[42]);
+
+                lblprincipaisartes.Text = Convert.ToString(dados[43]);
+                lbldonoartes.Text = Convert.ToString(dados[44]);
+                lblPrincipais.Text = Convert.ToString(dados[45]);
+                lbllocaisvenda.Text = Convert.ToString(dados[46]);
+                lblComoComerc.Text = Convert.ToString(dados[47]);
+
+                lbldiasTrab.Text = Convert.ToString(dados[48]);
+                lbldiaPesca.Text = Convert.ToString(dados[49]);
+                lblProdMedia.Text = Convert.ToString(dados[50]);
+                lblValorVenda.Text = Convert.ToString(dados[51]);
+                lblConsumido.Text = Convert.ToString(dados[52]);
+
+                lblDependentes.Text = Convert.ToString(dados[53]);
+                lblFilhos.Text = Convert.ToString(dados[54]);
+                lbldefeso.Text = Convert.ToString(dados[55]);
+                lblBolsaFam.Text = Convert.ToString(dados[56]);
+
+                lblDependentes.Text = Convert.ToString(dados[57]);
+                lblFilhos.Text = Convert.ToString(dados[58]);
+                lbldefeso.Text = Convert.ToString(dados[59]);
+                lblBolsaFam.Text = Convert.ToString(dados[60]);
+
+                lbltipoResid.Text = Convert.ToString(dados[61]);
+                lblAgua.Text = Convert.ToString(dados[62]);
+                lblEnergia.Text = Convert.ToString(dados[63]);
+                lblTelefone.Text = Convert.ToString(dados[64]);
+
+                lblEsgoto.Text = Convert.ToString(dados[65]);
+                lblComputador.Text = Convert.ToString(dados[66]);
+                lblPessoas.Text = Convert.ToString(dados[67]);
+                lblMenores.Text = Convert.ToString(dados[68]);
+                lblaposentado.Text = Convert.ToString(dados[69]);
+
             }
 
         }
