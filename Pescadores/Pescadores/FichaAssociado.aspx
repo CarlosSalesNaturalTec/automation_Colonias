@@ -50,17 +50,49 @@
 
     <p>Dependentes: <asp:Label ID="lblDependentes" runat="server"></asp:Label>. Filhos na Escola: <asp:Label ID="lblFilhos" runat="server"></asp:Label>. Recebe Seg.Defeso: <asp:Label ID="lbldefeso" runat="server"></asp:Label>. Recebe Bolsa Familia: <asp:Label ID="lblBolsaFam" runat="server"></asp:Label></p>
     <p>Possui Casa Própria: <asp:Label ID="lbltipoResid" runat="server"></asp:Label></p>
-    <p>Água Encanada: <asp:Label ID="lblAgua" runat="server"></asp:Label></p>
-    <p>Energia Eletrica: <asp:Label ID="lblEnergia" runat="server"></asp:Label></p>
-    <p>Possui Telefone: <asp:Label ID="lblTelefone" runat="server"></asp:Label></p>
-    <p>Possui Rede de Esgoto: <asp:Label ID="lblEsgoto" runat="server"></asp:Label></p>
-    <p>Computador com Internet: <asp:Label ID="lblComputador" runat="server"></asp:Label></p>
+    <p>Água Encanada: <asp:Label ID="lblAgua" runat="server"></asp:Label>. Energia Eletrica: <asp:Label ID="lblEnergia" runat="server"></asp:Label>. Possui Telefone: <asp:Label ID="lblTelefone" runat="server"></asp:Label></p>
+    <p>Possui Rede de Esgoto: <asp:Label ID="lblEsgoto" runat="server"></asp:Label>. Computador com Internet: <asp:Label ID="lblComputador" runat="server"></asp:Label></p>
+    <p>Quantas Pessoas Mora na Residencia: <asp:Label ID="lblPessoas" runat="server"></asp:Label>. Quantos Menores: <asp:Label ID="lblMenores" runat="server"></asp:Label>. Algum Aposentado: <asp:Label ID="lblaposentado" runat="server"></asp:Label></p>
+    <p>Renda mensal na atividade: <asp:Label ID="lblrendaAtiv" runat="server"></asp:Label>. Exerce outra Atividade: <asp:Label ID="lblOutraAtiv" runat="server"></asp:Label>. Renda Mensal na Outra Atividade: <asp:Label ID="lblrendaOutra" runat="server"></asp:Label></p>
+    <p>Quantos Recebem Seguro Defeso: <asp:Label ID="lblquantDefeso" runat="server"></asp:Label>. Quantos Recebem Bolsa Familia: <asp:Label ID="lblquantBolsa" runat="server"></asp:Label>. Total Renda Familiar: <asp:Label ID="lblTotalRenda" runat="server"></asp:Label></p>
+    <p>Quanto tempo é associado na Colônia: <asp:Label ID="lbltempocolonia" runat="server"></asp:Label>. Esta em dias com as mensalidades: <asp:Label ID="lblemdias" runat="server"></asp:Label>. Valor da Mensalidade: <asp:Label ID="lblMensalidade" runat="server"></asp:Label></p>
+    <p>Está Inadimplete? Porque ?: <asp:Label ID="lblinadimp" runat="server"></asp:Label>. Esta satisfeito?: <asp:Label ID="lblsatisfeito" runat="server"></asp:Label></p>
+    <p>Opnião sobre melhoria do atendimento:</p>
+    <p><asp:Label ID="lblOpniao" runat="server"></asp:Label></p>
 
-    <p>Quantas Pessoas Mora na Residencia: <asp:Label ID="lblPessoas" runat="server"></asp:Label></p>
-    <p>Quantos Menores: <asp:Label ID="lblMenores" runat="server"></asp:Label></p>
-    <p>Algum Aposentado: <asp:Label ID="lblaposentado" runat="server"></asp:Label></p>
 
-   
+    <br />
+    <h4>DECLARAÇÃO DE EXERCÍCIOS DA ATIVIDADE</h4>
+    
+    <p>Declaramos, sob responsabilidade civil e penal, que as informações prestadas neste formulário de recadastramento de pescadores(as)</p>
+    <p>são verdadeiras e que estamos cientes de que informações não verídicas declaradas, implicarão em penalidades previstas no artigo </p>
+    <p>299 do Código Penal (falsidade ideológica) além de outras sanções civis e administrativas cabíveis.</p>
+    <br />
+    <p><asp:Label ID="lblCidade" runat="server"></asp:Label> - <asp:Label ID="lblUFColonia" runat="server"></asp:Label>, <asp:Label ID="lbldataemissao" runat="server"></asp:Label> </p>
+    <br />
+
+    <p>_____________________________________</p>
+    <p>Assinatura do associado</p>
+    
+    <br />
+    <p>Testemunhas</p>
+    <br />
+    
+    <p>1._____________________________________</p>
+    <p>Nome e Asinatura</p>
+    <p>RG:</p>
+    <p>RGP:</p>
+    <br />
+
+    <p>2._____________________________________</p>
+    <p>Nome e Asinatura</p>
+    <p>RG:</p>
+    <p>RGP:</p>
+    <br />
+
+
+    <p>_____________________________________</p>
+    <p>Assinatura e nome do Entrevistador</p>
 
 
 

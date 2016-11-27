@@ -492,10 +492,10 @@
             <asp:Label ID="Label68" runat="server" Text="Renda Outra Atividade"></asp:Label>
         </div>
         <div class="col-sm-2">
-            <asp:Label ID="Label69" runat="server" Text="Valor Seg.Defeso"></asp:Label>
+            <asp:Label ID="Label69" runat="server" Text="Quantos Recebem Seg.Defeso"></asp:Label>
         </div>
         <div class="col-sm-2">
-            <asp:Label ID="Label70" runat="server" Text="Valor Bolsa Familia"></asp:Label>
+            <asp:Label ID="Label70" runat="server" Text="Quantos Recebem Bolsa Familia"></asp:Label>
         </div>
     </div>
     <!-- 13 - Campos -->

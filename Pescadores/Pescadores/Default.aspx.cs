@@ -16,16 +16,20 @@ namespace Pescadores
         protected void bt_conectar_Click(object sender, EventArgs e)
         {
             // localiza usuario
-            string stringSelect = "select ID_Colonia,usuario,senha,nome from Tbl_Colonias where usuario = '" + inputUser.Text + "'";
+            string stringSelect = "select ID_Colonia,usuario,senha,nome,cidade,uf from Tbl_Colonias where usuario = '" + inputUser.Text + "'";
             OperacaoBanco operacao = new OperacaoBanco();
             System.Data.SqlClient.SqlDataReader rcrdset = operacao.Select(stringSelect);
             while (rcrdset.Read())
             {
                 if (inputSenha.Text == Convert.ToString(rcrdset[2]))
                 {
-                    Session["IDCol"] = "4"; //ATENÇÃO - FIXO . ALTERAR A CADA COLONIA
+                    Session["IDCol"] = Convert.ToString(rcrdset[0]);
                     Session["Colonia_Nome"] = Convert.ToString(rcrdset[3]);
+                    Session["Colonia_Cidade"] = "Valença"; //Convert.ToString(rcrdset[4]);
+                    Session["Colonia_UF"] = "BA";  // Convert.ToString(rcrdset[5]);
+
                     Response.Redirect("Painel.aspx");
+
                 }
                 else
                 {

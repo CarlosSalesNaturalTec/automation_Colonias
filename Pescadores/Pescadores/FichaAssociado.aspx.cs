@@ -14,6 +14,11 @@ namespace Pescadores
                 lblColonia.Text = Session["Colonia_Nome"].ToString();
                 lblIDAssociado.Text = Session["IDAssoc"].ToString();
 
+                lblCidade.Text = Session["Colonia_Cidade"].ToString();
+                lblUFColonia.Text = Session["Colonia_UF"].ToString();
+
+                lbldataemissao.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
                 preencheFicha();
             }
         }
@@ -32,10 +37,13 @@ namespace Pescadores
                     "Relacao_Trabalho,Embarcacao_Utiliza,Embarcacao_Nome,Embarcacao_Prop,Embarcacao_Tipo," +
                     "Embarcacao_Tamanho,Embarcacao_PRopulsao,Embarcacao_capitania,RGP_MPA, " +
                     "Arte_Principal,Arte_Dono, Arte_Esepcies ,Arte_locais_venda ,Arte_comercializado ," +
-                    "Trabalho_dias,Trabalho_duracao ,Trabalho_producao ,Trabalho_valor_venda ,Trabalho_consumido,  " +
+                    "Trabalho_dias,Trabalho_duracao ,Trabalho_producao ,Trabalho_valor_venda ,Trabalho_consumido, " +
                     "Dependentes, Filhos_Escola, Seguro_Defeso, Bolsa_Familia, " +
                     "Tipo_Resid, possui_Agua_Encanada, possui_Energia , possui_Telefone ,possui_esgoto , possui_computador, " +
-                    "pessoas_Resid, pessoas_Menores , pessoas_aposentados " +
+                    "pessoas_Resid, pessoas_Menores , pessoas_aposentados, " +
+                    "renda_mensal, outra_atividade, renda_outra, " +
+                    "valor_Seguro_desemprego,valor_bolsa_familia ,total_renda_familiar ,  " +
+                    "tempo_associado, mensalidade_em_dias ,valor_mensalidade,motivo_inadimp ,satisfeito ,opniao " +
                     "from Tbl_Associados " + 
                     "where ID_Associado = " + lblIDAssociado.Text);
 
@@ -114,21 +122,31 @@ namespace Pescadores
                 lbldefeso.Text = Convert.ToString(dados[55]);
                 lblBolsaFam.Text = Convert.ToString(dados[56]);
 
-                lblDependentes.Text = Convert.ToString(dados[57]);
-                lblFilhos.Text = Convert.ToString(dados[58]);
-                lbldefeso.Text = Convert.ToString(dados[59]);
-                lblBolsaFam.Text = Convert.ToString(dados[60]);
+                lbltipoResid.Text = Convert.ToString(dados[57]);
+                lblAgua.Text = Convert.ToString(dados[58]);
+                lblEnergia.Text = Convert.ToString(dados[59]);
+                lblTelefone.Text = Convert.ToString(dados[60]);
 
-                lbltipoResid.Text = Convert.ToString(dados[61]);
-                lblAgua.Text = Convert.ToString(dados[62]);
-                lblEnergia.Text = Convert.ToString(dados[63]);
-                lblTelefone.Text = Convert.ToString(dados[64]);
+                lblEsgoto.Text = Convert.ToString(dados[61]);
+                lblComputador.Text = Convert.ToString(dados[62]);
+                lblPessoas.Text = Convert.ToString(dados[63]);
+                lblMenores.Text = Convert.ToString(dados[64]);
+                lblaposentado.Text = Convert.ToString(dados[65]);
 
-                lblEsgoto.Text = Convert.ToString(dados[65]);
-                lblComputador.Text = Convert.ToString(dados[66]);
-                lblPessoas.Text = Convert.ToString(dados[67]);
-                lblMenores.Text = Convert.ToString(dados[68]);
-                lblaposentado.Text = Convert.ToString(dados[69]);
+                lblrendaAtiv.Text = Convert.ToString(dados[66]);
+                lblOutraAtiv.Text = Convert.ToString(dados[67]);
+                lblrendaOutra.Text = Convert.ToString(dados[68]);
+
+                lblquantDefeso.Text = Convert.ToString(dados[69]);
+                lblquantBolsa.Text = Convert.ToString(dados[70]);
+                lblTotalRenda.Text = Convert.ToString(dados[71]);
+                lbltempocolonia.Text = Convert.ToString(dados[72]);
+                lblemdias.Text = Convert.ToString(dados[73]);
+                lblMensalidade.Text = Convert.ToString(dados[74]);
+                lblinadimp.Text = Convert.ToString(dados[75]);
+                lblsatisfeito.Text = Convert.ToString(dados[76]);
+                lblOpniao.Text = Convert.ToString(dados[77]);
+
 
             }
 
