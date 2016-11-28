@@ -1,9 +1,9 @@
-﻿<%@ Page Title="Cadastro Associado - GECOPE" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cadastro_Novo.aspx.cs" Inherits="Pescadores.Cadastro_Novo" %>
+﻿<%@ Page Title="Associado - Alteração de Cadastro" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cadastro_Alterar.aspx.cs" Inherits="Pescadores.Cadastro_Alterar" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
     <h4>
-        Colônia: <asp:Label ID="lblColonia" runat="server" ></asp:Label> - UF: <asp:Label ID="lblUF" runat="server" ></asp:Label> - ID: <asp:Label ID="lblIDCol" runat="server" ></asp:Label>    
+        Associado: <asp:Label ID="lblNomeAssoc" runat="server" ></asp:Label> - ID: <asp:Label ID="lblIDAssoc" runat="server" ></asp:Label>   
     </h4>
 
     <h3> IDENTIFICAÇÃO DO ASSOCIADO</h3>

@@ -5,19 +5,15 @@ namespace Pescadores
 {
     public partial class Cadastro_Novo : Page
     {
-        string ColoniaNome = "", ColoniaUF = "";
-        string IdColonia = "4";   // ATENÇÃO FIXO - ALTERAR A CADA COLONIA
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                // tenta identificar se houve login. caso contrário vai para página de erro
-                ColoniaNome = Session["Colonia_Nome"].ToString();
-                ColoniaUF = "BA";
-
-                lblColonia.Text = "Colônia: " + IdColonia + " - " + ColoniaNome;
-
+                // Coleta Dados da seção anterior 
+                lblIDCol.Text = Session["IDCol"].ToString();
+                lblColonia.Text = Session["Colonia_Nome"].ToString();
+                lblUF.Text = Session["Colonia_UF"].ToString();
             }
 
         }
@@ -38,9 +34,9 @@ namespace Pescadores
                     "possui_Energia,possui_Telefone,possui_esgoto,possui_computador,pessoas_Resid, pessoas_Menores, " +
                     "pessoas_aposentados,renda_mensal,outra_atividade,renda_outra,valor_Seguro_desemprego,valor_bolsa_familia, " +
                     "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao " +
-                    ") VALUES (" + IdColonia  +
-                    ",'" + txtNome.Text + "', '" + txtApelido.Text + "', '" + ColoniaNome + "', '" + txtEndereco.Text +
-                    "', '" + txtBairro.Text + "', '" + txtCEP.Text + "', '" + txtMunicipio.Text + "', '" + ColoniaUF + "', '" + txtPai.Text + "', " +
+                    ") VALUES (" + lblIDCol.Text +
+                    ",'" + txtNome.Text + "', '" + txtApelido.Text + "', '" + lblColonia.Text + "', '" + txtEndereco.Text +
+                    "', '" + txtBairro.Text + "', '" + txtCEP.Text + "', '" + txtMunicipio.Text + "', '" + lblUF.Text + "', '" + txtPai.Text + "', " +
                     "'" + txtMae.Text + "', '" + txtNascimento.Text + "', '" + txtNaturalidade.Text + "', '" + txtNacionalidade.Text + "', " +
                     "'" + txtEscolaridade.Text + "', " +
                     "'" + txtCPF.Text + "', " +
@@ -116,13 +112,33 @@ namespace Pescadores
 
             if (inserir == true)
             {
-                Response.Write("<script>alert('Ok');</script>");
-                LimpaCampos();
+                VerificaID();
             }
             else
             {
                 Response.Write("<script>alert('Problemas ao Salvar. Verifique os Dados');</script>");
             }
+
+        }
+
+        private void VerificaID()
+        {
+            string idassociado = "";
+            string stringSelect = @"select ID_Associado,Nome from Tbl_Associados" +
+               " where (ID_Colonia = " + lblIDCol.Text +
+               " and nome ='" + txtNome.Text + "') order by ID_Associado";
+
+            OperacaoBanco operacao = new OperacaoBanco();
+            System.Data.SqlClient.SqlDataReader rcrdset = operacao.Select(stringSelect);
+            while (rcrdset.Read())
+            {
+                idassociado = Convert.ToString(rcrdset[0]);
+            }
+            ConexaoBancoSQL.fecharConexao();
+
+            // abre ficha para impressão
+            Session["IDAssoc"] = idassociado;
+            Response.Redirect("FichaAssociado.aspx");
 
         }
 

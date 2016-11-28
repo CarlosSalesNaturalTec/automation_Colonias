@@ -10,34 +10,25 @@
 namespace Pescadores {
     
     
-    public partial class Cadastro_Novo {
+    public partial class Cadastro_Alterar {
         
         /// <summary>
-        /// lblColonia control.
+        /// lblNomeAssoc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblColonia;
+        protected global::System.Web.UI.WebControls.Label lblNomeAssoc;
         
         /// <summary>
-        /// lblUF control.
+        /// lblIDAssoc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUF;
-        
-        /// <summary>
-        /// lblIDCol control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIDCol;
+        protected global::System.Web.UI.WebControls.Label lblIDAssoc;
         
         /// <summary>
         /// Label1 control.

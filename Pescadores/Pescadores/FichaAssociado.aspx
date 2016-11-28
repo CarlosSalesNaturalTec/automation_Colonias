@@ -11,31 +11,31 @@
 
     <asp:Image ID="fotoAssociado" runat="server" ImageUrl="https://1drv.ms/i/s!Aoipfutjfp3IgfsCftXmz0vTqVqEvw" Width="95%" />
 
-    <p>Nome: <asp:Label ID="lblNome" runat="server"></asp:Label>. Apelido: <asp:Label ID="lblApelido" runat="server"></asp:Label></p>
+    <p>NOME: <asp:Label ID="lblNome" runat="server"></asp:Label>. APELIDO: <asp:Label ID="lblApelido" runat="server"></asp:Label></p>
     
-    <p>Endereço: <asp:Label ID="lblEND" runat="server"></asp:Label>. Bairro: <asp:Label ID="lblBairro" runat="server"></asp:Label></p>
-    <p>CEP: <asp:Label ID="lblCEP" runat="server"></asp:Label>. Municipio: <asp:Label ID="lblMunicipio" runat="server"></asp:Label>. Estado: <asp:Label ID="lblUF" runat="server"></asp:Label></p>
+    <p>ENDEREÇO: <asp:Label ID="lblEND" runat="server"></asp:Label>. BAIRRO: <asp:Label ID="lblBairro" runat="server"></asp:Label></p>
+    <p>CEP: <asp:Label ID="lblCEP" runat="server"></asp:Label>. MUNICÍPIO: <asp:Label ID="lblMunicipio" runat="server"></asp:Label>. UF: <asp:Label ID="lblUF" runat="server"></asp:Label></p>
 
-    <p>Pai: <asp:Label ID="lblPai" runat="server"></asp:Label>. Mãe: <asp:Label ID="lblMae" runat="server"></asp:Label></p>
+    <p>FILIAÇÃO PAI: <asp:Label ID="lblPai" runat="server"></asp:Label>. FILIAÇÃO MÃE: <asp:Label ID="lblMae" runat="server"></asp:Label></p>
 
-    <p>Nascimento: <asp:Label ID="lblNascimento" runat="server"></asp:Label>. Naturalidade: <asp:Label ID="lblNatural" runat="server"></asp:Label>. Nacionalidade: <asp:Label ID="lblNacional" runat="server"></asp:Label>. Escolaridade: <asp:Label ID="lblEscolaridade" runat="server"></asp:Label></p>
+    <p>NASCIMENTO: <asp:Label ID="lblNascimento" runat="server"></asp:Label>. NATURALIDADE: <asp:Label ID="lblNatural" runat="server"></asp:Label>. NACIONALIDADE: <asp:Label ID="lblNacional" runat="server"></asp:Label>. ESCOLARIDADE: <asp:Label ID="lblEscolaridade" runat="server"></asp:Label></p>
 
-    <p>CPF: <asp:Label ID="lblCPF" runat="server"></asp:Label>. RG: <asp:Label ID="lblRG" runat="server"></asp:Label>. Emissor: <asp:Label ID="lblEmissor" runat="server"></asp:Label>. Emissão: <asp:Label ID="lblEmissao" runat="server"></asp:Label></p>
-    <p>Titulo Eleitor: <asp:Label ID="lblTitulo" runat="server"></asp:Label>. Zona: <asp:Label ID="lblZona" runat="server"></asp:Label>. Seção: <asp:Label ID="lblSecao" runat="server"></asp:Label></p>
+    <p>CPF: <asp:Label ID="lblCPF" runat="server"></asp:Label>. RG: <asp:Label ID="lblRG" runat="server"></asp:Label>. EMISSOR: <asp:Label ID="lblEmissor" runat="server"></asp:Label>. EMISSÃO: <asp:Label ID="lblEmissao" runat="server"></asp:Label></p>
+    <p>TITULO ELEITOR: <asp:Label ID="lblTitulo" runat="server"></asp:Label>. ZONA: <asp:Label ID="lblZona" runat="server"></asp:Label>. SEÇÃO: <asp:Label ID="lblSecao" runat="server"></asp:Label></p>
     <p>PIS: <asp:Label ID="lblPIS" runat="server"></asp:Label>. NIT: <asp:Label ID="lblNIT" runat="server"></asp:Label>. CEI: <asp:Label ID="lblCEI" runat="server"></asp:Label></p>
 
-    <p>Sexo: <asp:Label ID="lblSexo" runat="server"></asp:Label>. Est.Civil: <asp:Label ID="lblCivil" runat="server"></asp:Label>. Telefone: <asp:Label ID="lblTel" runat="server"></asp:Label>. e-mail: <asp:Label ID="lblemail" runat="server"></asp:Label></p>
+    <p>SEXO: <asp:Label ID="lblSexo" runat="server"></asp:Label>. EST.CIVIL: <asp:Label ID="lblCivil" runat="server"></asp:Label>. TELEFONE: <asp:Label ID="lblTel" runat="server"></asp:Label>. e-MAIL: <asp:Label ID="lblemail" runat="server"></asp:Label></p>
 
     <h4>2 - INFORMAÇÕES PROFISSIONAIS</h4>
 
-    <p>CTPS: <asp:Label ID="lblCTPS" runat="server"></asp:Label>. RGP Atual: <asp:Label ID="lblRGP" runat="server"></asp:Label>. 1o.Registro: <asp:Label ID="lblRGP1" runat="server"></asp:Label>. Órgão Emissor: <asp:Label ID="lblRGPEMissor" runat="server"></asp:Label></p>
-    <p>Profissão: <asp:Label ID="lblprofissao" runat="server"></asp:Label>. Categoria: <asp:Label ID="lblcategoria" runat="server"></asp:Label>. Área de atuação: <asp:Label ID="lblareaatuacao" runat="server"></asp:Label></p>
+    <p>CTPS: <asp:Label ID="lblCTPS" runat="server"></asp:Label>. RGP ATUAL: <asp:Label ID="lblRGP" runat="server"></asp:Label>. 1o.REGISTRO: <asp:Label ID="lblRGP1" runat="server"></asp:Label>. ÓRGÃO EMISSOR: <asp:Label ID="lblRGPEMissor" runat="server"></asp:Label></p>
+    <p>PROFISSÃO: <asp:Label ID="lblprofissao" runat="server"></asp:Label>. CATEGORIA: <asp:Label ID="lblcategoria" runat="server"></asp:Label>. ÁREA DE ATUAÇÃO: <asp:Label ID="lblareaatuacao" runat="server"></asp:Label></p>
 
-    <p>Relação de Trabalho: <asp:Label ID="lblrelacao" runat="server"></asp:Label></p>
-    <p>Utiliza Embarcação na atividade: <asp:Label ID="lblutilizaembarca" runat="server"></asp:Label></p>
+    <p>RELAÇÃO DE TRABALHO: <asp:Label ID="lblrelacao" runat="server"></asp:Label></p>
+    <p>UTILIZA EMBARCAÇÃO NA ATIVIDADE: <asp:Label ID="lblutilizaembarca" runat="server"></asp:Label></p>
     
-    <p>Nome da Embarcação: <asp:Label ID="lblnomeEmbarca" runat="server"></asp:Label>. Propietário: <asp:Label ID="lblProp" runat="server"></asp:Label>. Tipo: <asp:Label ID="lblTipo" runat="server"></asp:Label>. Tamanho: <asp:Label ID="lblTamanho" runat="server"></asp:Label></p>
-    <p>Propoulsão: <asp:Label ID="lblPropulp" runat="server"></asp:Label>.  N.Registro Cap.Portos: <asp:Label ID="lblCapPortos" runat="server"></asp:Label>. RGP/MPA: <asp:Label ID="lblRGPMPA" runat="server"></asp:Label></p>
+    <p>NOME DA EMBARCAÇÃO: <asp:Label ID="lblnomeEmbarca" runat="server"></asp:Label>. PROPIETÁRIO: <asp:Label ID="lblProp" runat="server"></asp:Label>. TIPO: <asp:Label ID="lblTipo" runat="server"></asp:Label>. TAMANHO: <asp:Label ID="lblTamanho" runat="server"></asp:Label></p>
+    <p>PROPULSÃO: <asp:Label ID="lblPropulp" runat="server"></asp:Label>.  N.REGISTRO CAP.PORTOS: <asp:Label ID="lblCapPortos" runat="server"></asp:Label>. RGP/MPA: <asp:Label ID="lblRGPMPA" runat="server"></asp:Label></p>
 
     <p>Principais Artes de Pesca utilizadas: <asp:Label ID="lblprincipaisartes" runat="server"></asp:Label></p>
     <p>Dono das artes que trabalha: <asp:Label ID="lbldonoartes" runat="server"></asp:Label></p>

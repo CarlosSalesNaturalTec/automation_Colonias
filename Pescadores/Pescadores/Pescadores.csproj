@@ -136,6 +136,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cadastro_Alterar.aspx" />
     <Content Include="FichaAssociado.aspx" />
     <Content Include="ErroDefault.aspx" />
     <Content Include="Painel.aspx" />
@@ -204,6 +205,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastro_Alterar.aspx.cs">
+      <DependentUpon>Cadastro_Alterar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastro_Alterar.aspx.designer.cs">
+      <DependentUpon>Cadastro_Alterar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FichaAssociado.aspx.cs">
       <DependentUpon>FichaAssociado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

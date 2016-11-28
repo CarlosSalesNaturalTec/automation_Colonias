@@ -58,7 +58,10 @@ namespace Pescadores
 
         protected void BtAlterar(object sender, EventArgs e)
         {
-            
+            Session["IDAssoc"] = lblID.Text;
+            Session["NomeAssoc"] = lblAssociado.Text;
+            Response.Redirect("Cadastro_Alterar.aspx");
+
         }
 
         protected void BtExcluir(object sender, EventArgs e)
