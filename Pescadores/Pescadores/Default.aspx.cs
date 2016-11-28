@@ -25,8 +25,8 @@ namespace Pescadores
                 {
                     Session["IDCol"] = Convert.ToString(rcrdset[0]);
                     Session["Colonia_Nome"] = Convert.ToString(rcrdset[3]);
-                    Session["Colonia_Cidade"] = "Valença"; //Convert.ToString(rcrdset[4]);
-                    Session["Colonia_UF"] = "BA";  // Convert.ToString(rcrdset[5]);
+                    Session["Colonia_Cidade"] = Convert.ToString(rcrdset[4]);
+                    Session["Colonia_UF"] = Convert.ToString(rcrdset[5]);
 
                     Response.Redirect("Painel.aspx");
 

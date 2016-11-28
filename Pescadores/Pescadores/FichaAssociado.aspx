@@ -4,12 +4,11 @@
     
     <br />
     <asp:Image ID="Image1" runat="server" ImageUrl="http://www.fepesba.com.br/wp-content/uploads/2016/05/topo.png" Width="95%" />
-
-   <h4><asp:Label ID="lblColonia" runat="server"></asp:Label> - ID: <asp:Label ID="lblIDColonia" runat="server"></asp:Label> / <asp:Label ID="lblIDAssociado" runat="server"></asp:Label></h4>
+    
+    <br />
+    <h4><asp:Label ID="lblColonia" runat="server"></asp:Label> - ID: <asp:Label ID="lblIDColonia" runat="server"></asp:Label> / <asp:Label ID="lblIDAssociado" runat="server"></asp:Label></h4>
 
     <h4>1 - IDENTIFICAÇÃO DO ASSOCIADO</h4>
-
-    <asp:Image ID="fotoAssociado" runat="server" ImageUrl="https://1drv.ms/i/s!Aoipfutjfp3IgfsCftXmz0vTqVqEvw" Width="95%" />
 
     <p>NOME: <asp:Label ID="lblNome" runat="server"></asp:Label>. APELIDO: <asp:Label ID="lblApelido" runat="server"></asp:Label></p>
     
