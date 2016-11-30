@@ -20,7 +20,14 @@ namespace Pescadores
                 lbldataemissao.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
                 preencheFicha();
+                imprimeficha();
+                
             }
+        }
+
+        private void imprimeficha()
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "onclick", "<script language=javascript>window.print();</script>");
         }
 
         private void preencheFicha()

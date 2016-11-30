@@ -2,6 +2,13 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
     <br />
     <asp:Image ID="Image1" runat="server" ImageUrl="http://www.fepesba.com.br/wp-content/uploads/2016/05/topo.png" Width="95%" />
     
@@ -10,20 +17,58 @@
 
     <h4>1 - IDENTIFICAÇÃO DO ASSOCIADO</h4>
 
-    <p>NOME: <asp:Label ID="lblNome" runat="server"></asp:Label>. APELIDO: <asp:Label ID="lblApelido" runat="server"></asp:Label></p>
-    
-    <p>ENDEREÇO: <asp:Label ID="lblEND" runat="server"></asp:Label>. BAIRRO: <asp:Label ID="lblBairro" runat="server"></asp:Label></p>
-    <p>CEP: <asp:Label ID="lblCEP" runat="server"></asp:Label>. MUNICÍPIO: <asp:Label ID="lblMunicipio" runat="server"></asp:Label>. UF: <asp:Label ID="lblUF" runat="server"></asp:Label></p>
+    <table style="width:100%">
+        <tr>
+            <td>NOME: <asp:Label ID="lblNome" runat="server"></asp:Label></td>
+            <td>APELIDO: <asp:Label ID="lblApelido" runat="server"></asp:Label></td>
+        </tr>
+        <tr>
+            <td>ENDEREÇO: <asp:Label ID="lblEND" runat="server"></asp:Label></td>
+            <td>BAIRRO: <asp:Label ID="lblBairro" runat="server"></asp:Label></td>
+        </tr>
+        <tr>
+            <td>CEP: <asp:Label ID="lblCEP" runat="server"></asp:Label>  </td>
+            <td>MUNICÍPIO: <asp:Label ID="lblMunicipio" runat="server"></asp:Label>. UF: <asp:Label ID="lblUF" runat="server"></asp:Label></td>
+        </tr>
+        <tr>
+            <td>FILIAÇÃO PAI: <asp:Label ID="lblPai" runat="server"></asp:Label></td>
+            <td>FILIAÇÃO MÃE: <asp:Label ID="lblMae" runat="server"></asp:Label></td>
+        </tr>
+    </table>
 
-    <p>FILIAÇÃO PAI: <asp:Label ID="lblPai" runat="server"></asp:Label>. FILIAÇÃO MÃE: <asp:Label ID="lblMae" runat="server"></asp:Label></p>
+    <table style="width:100%">
+        <tr>
+            <td>NASCIMENTO: <asp:Label ID="lblNascimento" runat="server"></asp:Label></td>
+            <td>NATURALIDADE: <asp:Label ID="lblNatural" runat="server"></asp:Label></td>            
+            <td>NACIONALIDADE: <asp:Label ID="lblNacional" runat="server"></asp:Label></td>
+            <td>ESCOLARIDADE: <asp:Label ID="lblEscolaridade" runat="server"></asp:Label></td>
+        </tr>
+        <tr>
+            <td>CPF: <asp:Label ID="lblCPF" runat="server"></asp:Label></td>
+            <td>RG: <asp:Label ID="lblRG" runat="server"></asp:Label></td>
+            <td>EMISSOR: <asp:Label ID="lblEmissor" runat="server"></asp:Label></td>
+            <td>EMISSÃO: <asp:Label ID="lblEmissao" runat="server"></asp:Label></td>
+        </tr>
+        <tr>
+            <td>SEXO: <asp:Label ID="lblSexo" runat="server"></asp:Label></td>
+            <td>EST.CIVIL: <asp:Label ID="lblCivil" runat="server"></asp:Label></td>
+            <td>TELEFONE: <asp:Label ID="lblTel" runat="server"></asp:Label></td>
+            <td>e-MAIL: <asp:Label ID="lblemail" runat="server"></asp:Label></td>
+        </tr>
+    </table>
 
-    <p>NASCIMENTO: <asp:Label ID="lblNascimento" runat="server"></asp:Label>. NATURALIDADE: <asp:Label ID="lblNatural" runat="server"></asp:Label>. NACIONALIDADE: <asp:Label ID="lblNacional" runat="server"></asp:Label>. ESCOLARIDADE: <asp:Label ID="lblEscolaridade" runat="server"></asp:Label></p>
-
-    <p>CPF: <asp:Label ID="lblCPF" runat="server"></asp:Label>. RG: <asp:Label ID="lblRG" runat="server"></asp:Label>. EMISSOR: <asp:Label ID="lblEmissor" runat="server"></asp:Label>. EMISSÃO: <asp:Label ID="lblEmissao" runat="server"></asp:Label></p>
-    <p>TITULO ELEITOR: <asp:Label ID="lblTitulo" runat="server"></asp:Label>. ZONA: <asp:Label ID="lblZona" runat="server"></asp:Label>. SEÇÃO: <asp:Label ID="lblSecao" runat="server"></asp:Label></p>
-    <p>PIS: <asp:Label ID="lblPIS" runat="server"></asp:Label>. NIT: <asp:Label ID="lblNIT" runat="server"></asp:Label>. CEI: <asp:Label ID="lblCEI" runat="server"></asp:Label></p>
-
-    <p>SEXO: <asp:Label ID="lblSexo" runat="server"></asp:Label>. EST.CIVIL: <asp:Label ID="lblCivil" runat="server"></asp:Label>. TELEFONE: <asp:Label ID="lblTel" runat="server"></asp:Label>. e-MAIL: <asp:Label ID="lblemail" runat="server"></asp:Label></p>
+    <table style="width:100%">
+        <tr>
+            <td>TITULO ELEITOR: <asp:Label ID="lblTitulo" runat="server"></asp:Label></td>
+            <td>ZONA: <asp:Label ID="lblZona" runat="server"></asp:Label></td>
+            <td>SEÇÃO: <asp:Label ID="lblSecao" runat="server"></asp:Label></td>
+        </tr>
+        <tr>
+            <td>PIS: <asp:Label ID="lblPIS" runat="server"></asp:Label></td>
+            <td>NIT: <asp:Label ID="lblNIT" runat="server"></asp:Label></td>
+            <td>CEI: <asp:Label ID="lblCEI" runat="server"></asp:Label></td>
+        </tr>
+    </table>
 
     <h4>2 - INFORMAÇÕES PROFISSIONAIS</h4>
 
