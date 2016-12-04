@@ -33,7 +33,7 @@ namespace Pescadores
                     "Dependentes,Filhos_Escola,Seguro_Defeso,Bolsa_Familia,Tipo_Resid,possui_Agua_Encanada,  " +
                     "possui_Energia,possui_Telefone,possui_esgoto,possui_computador,pessoas_Resid, pessoas_Menores, " +
                     "pessoas_aposentados,renda_mensal,outra_atividade,renda_outra,valor_Seguro_desemprego,valor_bolsa_familia, " +
-                    "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao " +
+                    "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao, CTPS_Serie " +
                     ") VALUES (" + lblIDCol.Text +
                     ",'" + txtNome.Text + "', '" + txtApelido.Text + "', '" + lblColonia.Text + "', '" + txtEndereco.Text +
                     "', '" + txtBairro.Text + "', '" + txtCEP.Text + "', '" + txtMunicipio.Text + "', '" + lblUF.Text + "', '" + txtPai.Text + "', " +
@@ -103,7 +103,8 @@ namespace Pescadores
                     "'" + txtValorMens.Text + "', " +
                     "'" + txtMotivoInadimp.Text + "', " +
                     "'" + txtSatisfeito.Text + "', " +
-                    "'" + txtOpniao.Text + "' " +
+                    "'" + txtOpniao.Text + "', " +
+                    "getdate() " +
                     ")"; 
 
             OperacaoBanco operacao = new OperacaoBanco();

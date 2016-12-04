@@ -67,6 +67,24 @@ namespace Pescadores {
         protected global::System.Web.UI.WebControls.Label lblApelido;
         
         /// <summary>
+        /// lblPai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPai;
+        
+        /// <summary>
+        /// lblMae control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMae;
+        
+        /// <summary>
         /// lblEND control.
         /// </summary>
         /// <remarks>
@@ -110,24 +128,6 @@ namespace Pescadores {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUF;
-        
-        /// <summary>
-        /// lblPai control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPai;
-        
-        /// <summary>
-        /// lblMae control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMae;
         
         /// <summary>
         /// lblNascimento control.
