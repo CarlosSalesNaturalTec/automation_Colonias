@@ -11,7 +11,6 @@
             background: #ccc;
         }
     </style>
-
     
     <!-- Camera - necessário https -->
     <div id="results"></div>
@@ -20,8 +19,8 @@
     <script type="text/javascript" src="Scripts/webcam.js"></script>
     <script language="JavaScript">
         Webcam.set({
-			width: 320,
-			height: 240,
+			width: 160,
+			height: 120,
 			image_format: 'png'
 		});
 		Webcam.attach( '#my_camera' );
@@ -35,10 +34,13 @@
 			// take snapshot and get image data
 			Webcam.snap( function(data_uri) {
 				// display results in page
-				document.getElementById('results').innerHTML = '<img src="'+data_uri+'"/>';
+			    document.getElementById('results').innerHTML = '<img src="' + data_uri + '"/>';
+			    document.getElementById("Hidden1").value = data_uri
 			} );
 		}
     </script>
+
+    <input id="Hidden1" name="fotouri" type="hidden"/>
 
     <h3> IDENTIFICAÇÃO DO ASSOCIADO</h3>
     <h4>Colônia: <asp:Label ID="lblColonia" runat="server" ></asp:Label> - UF: <asp:Label ID="lblUF" runat="server" ></asp:Label> - ID: <asp:Label ID="lblIDCol" runat="server" ></asp:Label></h4>
@@ -608,6 +610,6 @@
     <asp:TextBox ID="txtOpniao" runat="server" Width="1600px"></asp:TextBox>
 
     <p></p>
-    <asp:Button ID="Button1" runat="server" Text="Salvar" OnClick="BtSalvar" />    
+    <asp:Button ID="Button1" runat="server" Text="Salvar" OnClick="BtSalvar" />
 
 </asp:Content>

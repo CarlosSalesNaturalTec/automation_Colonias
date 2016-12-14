@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 
 namespace Pescadores
 {
@@ -20,6 +21,11 @@ namespace Pescadores
 
         protected void BtSalvar(object sender, EventArgs e)
         {
+            string FotoDataUri = Request["fotouri"].ToString();
+            int tamanho = FotoDataUri.Length;
+
+            string emissao = DateTime.Now.ToString("dd/MM/yyyy");
+
             // string INSERT
             string stringinsert = @"INSERT INTO Tbl_Associados (ID_Colonia,Nome,Apelido,Colonia, " +
                     "Endereco,Bairro,CEP,Cidade,UF,Filiacao_Pai,Filiacao_Mae,Nascimento,Naturalidade,Nacionalidade,Escolaridade," +
@@ -33,7 +39,7 @@ namespace Pescadores
                     "Dependentes,Filhos_Escola,Seguro_Defeso,Bolsa_Familia,Tipo_Resid,possui_Agua_Encanada,  " +
                     "possui_Energia,possui_Telefone,possui_esgoto,possui_computador,pessoas_Resid, pessoas_Menores, " +
                     "pessoas_aposentados,renda_mensal,outra_atividade,renda_outra,valor_Seguro_desemprego,valor_bolsa_familia, " +
-                    "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao, CTPS_Serie " +
+                    "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao, CTPS_Serie,FotoDataURI  " +
                     ") VALUES (" + lblIDCol.Text +
                     ",'" + txtNome.Text + "', '" + txtApelido.Text + "', '" + lblColonia.Text + "', '" + txtEndereco.Text +
                     "', '" + txtBairro.Text + "', '" + txtCEP.Text + "', '" + txtMunicipio.Text + "', '" + lblUF.Text + "', '" + txtPai.Text + "', " +
@@ -104,7 +110,8 @@ namespace Pescadores
                     "'" + txtMotivoInadimp.Text + "', " +
                     "'" + txtSatisfeito.Text + "', " +
                     "'" + txtOpniao.Text + "', " +
-                    "getdate() " +
+                    "'" + emissao + "', " +
+                    "'" + tamanho.ToString() + "' " +
                     ")"; 
 
             OperacaoBanco operacao = new OperacaoBanco();

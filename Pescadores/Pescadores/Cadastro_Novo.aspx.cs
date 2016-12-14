@@ -20,6 +20,9 @@ namespace Pescadores
 
         protected void BtSalvar(object sender, EventArgs e)
         {
+
+            string emissao = DateTime.Now.ToString("dd/MM/yyyy");
+
             // string INSERT
             string stringinsert = @"INSERT INTO Tbl_Associados (ID_Colonia,Nome,Apelido,Colonia, " +
                     "Endereco,Bairro,CEP,Cidade,UF,Filiacao_Pai,Filiacao_Mae,Nascimento,Naturalidade,Nacionalidade,Escolaridade," +
@@ -104,7 +107,7 @@ namespace Pescadores
                     "'" + txtMotivoInadimp.Text + "', " +
                     "'" + txtSatisfeito.Text + "', " +
                     "'" + txtOpniao.Text + "', " +
-                    "getdate() " +
+                    "'" + emissao + "' " +
                     ")"; 
 
             OperacaoBanco operacao = new OperacaoBanco();

@@ -25,7 +25,7 @@ namespace Pescadores
         public ConexaoBancoSQL()
         {
             // *** STRING DE CONEXÃO COM BANCO DE DADOS - Atenção! Alterar dados conforme seu servidor
-           stringconnection1 = @"Server=tcp:dbservergecope.database.windows.net,1433;Initial Catalog=dbgecope;Persist Security Info=False;User ID=admgecope;Password=Pwd@2016;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+           stringconnection1 = @"";
             try
             {
                 tentarAbrirConexaoRemota();

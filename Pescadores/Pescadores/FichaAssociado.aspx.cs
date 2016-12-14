@@ -154,7 +154,6 @@ namespace Pescadores
                 lblsatisfeito.Text = Convert.ToString(dados[76]);
                 lblOpniao.Text = Convert.ToString(dados[77]);
 
-
             }
 
         }
