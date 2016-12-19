@@ -30,11 +30,24 @@ namespace Pescadores
         {
             lblID.Text = GridAssociados.SelectedRow.Cells[2].Text;
             lblAssociado.Text = GridAssociados.SelectedRow.Cells[0].Text;
+
+            exibeFotoBase64(lblID.Text);
             
             Bt_Alterar.Visible = true;
             Bt_Imprimir.Visible = true;
             Bt_Excluir.Visible = true;
 
+        }
+
+        private void exibeFotoBase64(string id)
+        {
+            OperacaoBanco operacao = new OperacaoBanco();
+            System.Data.SqlClient.SqlDataReader dados = operacao.Select("select FotoDataURI from Tbl_Associados where ID_Associado = " + id);
+            while (dados.Read())
+            {
+                string ScriptFoto = "<script language=javascript>document.getElementById('results').innerHTML = '<img src=\"" + Convert.ToString(dados[0]) + "\"/>';</script>";
+                ClientScript.RegisterStartupScript(this.GetType(), "montafoto", ScriptFoto);
+            }
         }
 
         private void atualiza_grid()
