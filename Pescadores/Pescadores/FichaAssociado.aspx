@@ -7,11 +7,19 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        #results {
+            float: right;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid;
+            background: #ccc;
+        }
     </style>
 
     <br />
     <asp:Image ID="Image1" runat="server" ImageUrl="http://www.fepesba.com.br/wp-content/uploads/2016/05/topo.png" Width="80%" />
-    
+    <div id="results"></div>
+
     <br />
     <h4><asp:Label ID="lblColonia" runat="server"></asp:Label> - ID: <asp:Label ID="lblIDColonia" runat="server"></asp:Label> / <asp:Label ID="lblIDAssociado" runat="server"></asp:Label></h4>
 

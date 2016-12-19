@@ -50,7 +50,7 @@ namespace Pescadores
                     "pessoas_Resid, pessoas_Menores , pessoas_aposentados, " +
                     "renda_mensal, outra_atividade, renda_outra, " +
                     "valor_Seguro_desemprego,valor_bolsa_familia ,total_renda_familiar ,  " +
-                    "tempo_associado, mensalidade_em_dias ,valor_mensalidade,motivo_inadimp ,satisfeito ,opniao " +
+                    "tempo_associado, mensalidade_em_dias ,valor_mensalidade,motivo_inadimp ,satisfeito ,opniao, FotoDataURI " +
                     "from Tbl_Associados " + 
                     "where ID_Associado = " + lblIDAssociado.Text);
 
@@ -153,6 +153,10 @@ namespace Pescadores
                 lblinadimp.Text = Convert.ToString(dados[75]);
                 lblsatisfeito.Text = Convert.ToString(dados[76]);
                 lblOpniao.Text = Convert.ToString(dados[77]);
+
+                //monta foto
+                string ScriptFoto = "<script language=javascript>document.getElementById('results').innerHTML = '<img src=\"" + Convert.ToString(dados[78]) + "\"/>';</script>";
+                ClientScript.RegisterStartupScript(this.GetType(), "montafoto", ScriptFoto);
 
             }
 

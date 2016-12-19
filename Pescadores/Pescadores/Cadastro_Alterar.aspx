@@ -2,9 +2,35 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
-    <h4>
-        Associado: <asp:Label ID="lblNomeAssoc" runat="server" ></asp:Label> - ID: <asp:Label ID="lblIDAssoc" runat="server" ></asp:Label>   
-    </h4>
+    <style type="text/css">
+        #results {
+            float: right;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid;
+            background: #ccc;
+        }
+    </style>
+    
+    <h4>Associado: <asp:Label ID="lblNomeAssoc" runat="server" ></asp:Label> - ID: <asp:Label ID="lblIDAssoc" runat="server" ></asp:Label></h4>
+
+    <!-- Camera - necessário https -->
+    <br />
+    <div id="results"></div>
+    <div id="my_camera"></div>
+
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="filePicker">Carregar Foto existente:</label><br>
+            <input type="file" id="filePicker">
+        </div>
+        <div class="col-sm-6">    
+            <label for="btwebcam">WebCam:</label><br>   
+            <input id="btwebcam" type=button value="Ativar WebCam" onClick="AtivarWebCam()">
+            <input type=button value="Capturar imagem" onClick="take_snapshot()">
+        </div>
+    </div>
 
     <h3> IDENTIFICAÇÃO DO ASSOCIADO</h3>
     <!-- 01 - Cabeçalho -->
@@ -574,5 +600,53 @@
 
     <p></p>
     <asp:Button ID="Button1" runat="server" Text="Salvar" OnClick="BtSalvar" />    
+
+    <input id="Hidden1" name="fotouri" type="hidden"/>
+
+    <script type="text/javascript" src="Scripts/webcam.js"></script>
+
+    <script language="JavaScript">
+
+        var handleFileSelect = function (evt) {
+            var files = evt.target.files;
+            var file = files[0];
+            if (files && file) {
+                var reader = new FileReader();
+                reader.onload = function (readerEvt) {
+                    var binaryString = readerEvt.target.result;
+                    var data_uri = "data:image/png;base64," + btoa(binaryString);
+                    document.getElementById('results').innerHTML = '<img src="' + data_uri + '"/>';
+                    document.getElementById("Hidden1").value = data_uri
+                };
+                reader.readAsBinaryString(file);
+            }
+        };
+
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
+        } else {
+            alert('Favor atualizar versão do browser!');
+        }
+
+        function AtivarWebCam() {
+            Webcam.set({
+                width: 160,
+                height: 120,
+                image_format: 'png'
+            });
+            Webcam.attach('#my_camera');
+        }
+
+        function take_snapshot() {
+            // take snapshot and get image data
+            Webcam.snap(function (data_uri) {
+                // display results in page
+                document.getElementById('results').innerHTML = '<img src="' + data_uri + '"/>';
+                document.getElementById("Hidden1").value = data_uri
+            });
+            Webcam.reset()
+        }
+
+    </script>
 
 </asp:Content>

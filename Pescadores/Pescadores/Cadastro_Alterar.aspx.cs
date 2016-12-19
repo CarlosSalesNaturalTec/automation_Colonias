@@ -15,13 +15,12 @@ namespace Pescadores
                 lblNomeAssoc.Text = Session["NomeAssoc"].ToString();
 
                 PreencheCampos();
-
             }
-
         }
 
         protected void BtSalvar(object sender, EventArgs e)
         {
+            string FotoDataUri = Request["fotouri"].ToString();
             string stringupdate = "update Tbl_Associados set Nome = '" + txtNome.Text + "', " +
                 "Apelido = '" + txtApelido.Text + "', " +
                 "Endereco = '" + txtEndereco.Text + "', " +
@@ -98,7 +97,8 @@ namespace Pescadores
                 "valor_mensalidade  = '" + txtValorMens.Text + "', " +
                 "motivo_inadimp  = '" + txtMotivoInadimp.Text + "', " +
                 "satisfeito  = '" + txtSatisfeito.Text + "', " +
-                "opniao  = '" + txtOpniao.Text + "' " +
+                "opniao  = '" + txtOpniao.Text + "', " +
+                "FotoDataURI  = '" + FotoDataUri + "' " +
                 "where ID_Associado = " + lblIDAssoc.Text;
 
             OperacaoBanco operacao = new OperacaoBanco();
@@ -113,7 +113,6 @@ namespace Pescadores
 
         private void PreencheCampos()
         {
-
             string stringSelect = @"select Nome,Apelido, " +
                     "Endereco,Bairro,CEP,Cidade,Filiacao_Pai,Filiacao_Mae,Nascimento,Naturalidade,Nacionalidade,Escolaridade," +
                     "CPF,RG,RG_Orgao,RG_Data_Exped,PIS,NIT, " +
@@ -126,7 +125,7 @@ namespace Pescadores
                     "Dependentes,Filhos_Escola,Seguro_Defeso,Bolsa_Familia,Tipo_Resid,possui_Agua_Encanada,  " +
                     "possui_Energia,possui_Telefone,possui_esgoto,possui_computador,pessoas_Resid, pessoas_Menores, " +
                     "pessoas_aposentados,renda_mensal,outra_atividade,renda_outra,valor_Seguro_desemprego,valor_bolsa_familia, " +
-                    "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao,ID_Colonia " +
+                    "total_renda_familiar ,tempo_associado,mensalidade_em_dias,valor_mensalidade ,motivo_inadimp, satisfeito,opniao,ID_Colonia, FotoDataURI " +
                     "from Tbl_Associados where ID_Associado = " + lblIDAssoc.Text;
             
             OperacaoBanco operacao = new OperacaoBanco();
@@ -209,7 +208,11 @@ namespace Pescadores
                 txtValorMens.Text = Convert.ToString(rcrdset[73]);
                 txtMotivoInadimp.Text = Convert.ToString(rcrdset[74]);
                 txtSatisfeito.Text = Convert.ToString(rcrdset[75]);
-                txtOpniao.Text = Convert.ToString(rcrdset[76]); 
+                txtOpniao.Text = Convert.ToString(rcrdset[76]);
+
+                //monta foto
+                string ScriptFoto = "<script language=javascript>document.getElementById('results').innerHTML = '<img src=\"" + Convert.ToString(rcrdset[77]) + "\"/>';</script>";
+                ClientScript.RegisterStartupScript(this.GetType(), "montafoto", ScriptFoto);
             }
             ConexaoBancoSQL.fecharConexao();
             txtNome.Focus();

@@ -5,42 +5,30 @@
     <style type="text/css">
         #results {
             float: right;
-            margin: 20px;
-            padding: 20px;
+            margin: 5px;
+            padding: 5px;
             border: 1px solid;
             background: #ccc;
         }
     </style>
     
     <!-- Camera - necessário https -->
+    <br />
     <div id="results"></div>
-    <br />
     <div id="my_camera"></div>
-    <script type="text/javascript" src="Scripts/webcam.js"></script>
-    <script language="JavaScript">
-        Webcam.set({
-			width: 160,
-			height: 120,
-			image_format: 'png'
-		});
-		Webcam.attach( '#my_camera' );
-    </script>
-    <br />
-    <form>
-        <input type=button value="Tirar Foto" onClick="take_snapshot()">
-    </form>
-    <script language="JavaScript">
-		function take_snapshot() {
-			// take snapshot and get image data
-			Webcam.snap( function(data_uri) {
-				// display results in page
-			    document.getElementById('results').innerHTML = '<img src="' + data_uri + '"/>';
-			    document.getElementById("Hidden1").value = data_uri
-			} );
-		}
-    </script>
 
-    <input id="Hidden1" name="fotouri" type="hidden"/>
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="filePicker">Carregar Foto existente:</label><br>
+            <input type="file" id="filePicker">
+        </div>
+        <div class="col-sm-6">    
+            <label for="btwebcam">WebCam:</label><br>   
+            <input id="btwebcam" type=button value="Ativar WebCam" onClick="AtivarWebCam()">
+            <input type=button value="Capturar imagem WebCam" onClick="take_snapshot()">
+        </div>
+    </div>
 
     <h3> IDENTIFICAÇÃO DO ASSOCIADO</h3>
     <h4>Colônia: <asp:Label ID="lblColonia" runat="server" ></asp:Label> - UF: <asp:Label ID="lblUF" runat="server" ></asp:Label> - ID: <asp:Label ID="lblIDCol" runat="server" ></asp:Label></h4>
@@ -611,5 +599,62 @@
 
     <p></p>
     <asp:Button ID="Button1" runat="server" Text="Salvar" OnClick="BtSalvar" />
+
+
+    <input id="Hidden1" name="fotouri" type="hidden"/>
+
+    <script type="text/javascript" src="Scripts/webcam.js"></script>
+
+    <script language="JavaScript">
+
+        var handleFileSelect = function (evt) {
+            var files = evt.target.files;
+            var file = files[0];
+
+            if (files && file) {
+                var reader = new FileReader();
+
+                reader.onload = function (readerEvt) {
+                    var binaryString = readerEvt.target.result;
+                    var data_uri = "data:image/png;base64," + btoa(binaryString);
+
+                    document.getElementById('results').innerHTML = '<img src="' + data_uri + '"/>';
+                    document.getElementById("Hidden1").value = data_uri
+
+                };
+
+                reader.readAsBinaryString(file);
+            }
+        };
+
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            document.getElementById('filePicker').addEventListener('change', handleFileSelect, false);
+        } else {
+            alert('The File APIs are not fully supported in this browser.');
+        }
+
+
+        function AtivarWebCam() {
+            Webcam.set({
+                width: 160,
+                height: 120,
+                image_format: 'png'
+            });
+            Webcam.attach('#my_camera');
+            
+        }
+
+        function take_snapshot() {
+            // take snapshot and get image data
+            Webcam.snap(function (data_uri) {
+                // display results in page
+                document.getElementById('results').innerHTML = '<img src="' + data_uri + '"/>';
+                document.getElementById("Hidden1").value = data_uri
+            });
+
+            Webcam.reset()
+        }
+
+    </script>
 
 </asp:Content>

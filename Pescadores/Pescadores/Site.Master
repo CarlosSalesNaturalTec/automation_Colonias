@@ -67,9 +67,7 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="Cadastro_Listagem.aspx">Pesquisa</a></li>
                                 <li class="divider"></li>
-                                <li><a href="Cadastro_Novo.aspx">Cadastrar Novo</a></li>
-                                <li class="divider"></li>
-                                <li><a href="Cadastro_Novo2.aspx">Cadastrar com Foto</a></li>
+                                <li><a href="Cadastro_Novo2.aspx">Cadastrar Novo</a></li>
                             </ul>
                         </li>                 
                     </ul>

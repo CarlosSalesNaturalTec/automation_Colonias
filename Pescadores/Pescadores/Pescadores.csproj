@@ -140,7 +140,6 @@
     <Content Include="Cadastro_Novo2.aspx" />
     <Content Include="FichaAssociado.aspx" />
     <Content Include="ErroDefault.aspx" />
-    <Content Include="foto.html" />
     <Content Include="Painel.aspx" />
     <Content Include="Scripts\webcam.js" />
     <Content Include="Suporte.aspx" />
