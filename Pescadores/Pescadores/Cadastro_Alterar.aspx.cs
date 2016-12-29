@@ -210,7 +210,9 @@ namespace Pescadores
                 txtSatisfeito.Text = Convert.ToString(rcrdset[75]);
                 txtOpniao.Text = Convert.ToString(rcrdset[76]);
 
-                string ScriptFoto = "<script language=javascript>document.getElementById('results').innerHTML = '<img src=\"" + Convert.ToString(rcrdset[78]) + "\"/>';</script>";
+                string ScriptFoto = "<script language=javascript>document.getElementById('results').innerHTML = '<img src=\"" + Convert.ToString(rcrdset[78]) + "\"/>';" +
+                    "document.getElementById('Hidden1').value = \"" + Convert.ToString(rcrdset[78]) + "\"; </script>";
+                
                 ClientScript.RegisterStartupScript(this.GetType(), "montafoto", ScriptFoto);
             }
             ConexaoBancoSQL.fecharConexao();

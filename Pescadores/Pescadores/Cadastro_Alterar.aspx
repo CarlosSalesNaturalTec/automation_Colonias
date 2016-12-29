@@ -601,7 +601,7 @@
     <p></p>
     <asp:Button ID="Button1" runat="server" Text="Salvar" OnClick="BtSalvar" />    
 
-    <input id="Hidden1" name="fotouri" type="hidden"/>
+    <input id="Hidden1" name="fotouri" type="hidden" />
 
     <script type="text/javascript" src="Scripts/webcam.js"></script>
 
