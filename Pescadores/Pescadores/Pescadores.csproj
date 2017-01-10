@@ -136,8 +136,12 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CadastroAssociado.aspx" />
     <Content Include="Cadastro_Alterar.aspx" />
     <Content Include="Cadastro_Novo2.aspx" />
+    <Content Include="CadastroCorpo.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="FichaAssociado.aspx" />
     <Content Include="ErroDefault.aspx" />
     <Content Include="Painel.aspx" />
@@ -146,8 +150,6 @@
     <Content Include="Cadastro_Listagem.aspx" />
     <Content Include="Cadastro_Novo.aspx" />
     <Content Include="Contact.aspx" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -207,6 +209,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroAssociado.aspx.cs">
+      <DependentUpon>CadastroAssociado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroAssociado.aspx.designer.cs">
+      <DependentUpon>CadastroAssociado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro_Alterar.aspx.cs">
       <DependentUpon>Cadastro_Alterar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,6 +229,13 @@
     </Compile>
     <Compile Include="Cadastro_Novo2.aspx.designer.cs">
       <DependentUpon>Cadastro_Novo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroCorpo.aspx.cs">
+      <DependentUpon>CadastroCorpo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroCorpo.aspx.designer.cs">
+      <DependentUpon>CadastroCorpo.aspx</DependentUpon>
     </Compile>
     <Compile Include="FichaAssociado.aspx.cs">
       <DependentUpon>FichaAssociado.aspx</DependentUpon>

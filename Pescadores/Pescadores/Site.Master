@@ -68,6 +68,9 @@
                                 <li><a href="Cadastro_Listagem.aspx">Pesquisa</a></li>
                                 <li class="divider"></li>
                                 <li><a href="Cadastro_Novo2.aspx">Cadastrar Novo</a></li>
+                                <li class="divider"></li>
+                                <li><a href="CadastroAssociado.aspx">Novo Layout</a></li>
+                                
                             </ul>
                         </li>                 
                     </ul>
