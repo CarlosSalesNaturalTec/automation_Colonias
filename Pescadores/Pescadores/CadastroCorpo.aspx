@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <br />
     <form class="form-horizontal">
         <fieldset>
@@ -49,7 +48,6 @@
                     <input type="text" class="form-control" id="txtCEP" name="txtCEP">
                 </div>
             </div>
-
 
             <div class="form-group">
                 <label for="txtBairro" class="col-md-1 control-label">Bairro</label>
@@ -170,6 +168,104 @@
                         <option>M</option>
                         <option>F</option>
                     </select>
+                </div>
+            </div>
+
+            <br />
+            <legend>INFORMAÇÕES PROFISSIONAIS</legend>
+
+            <div class="form-group">
+                <label for="txtCTPS" class="col-md-1 control-label">CTPS</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtCTPS" name="txtCTPS">
+                </div>
+
+                <label for="txtRGPAtual" class="col-md-1 control-label">RGP Atual</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtRGPAtual" name="txtRGPAtual">
+                </div>
+
+                <label for="txtRGPRegistro" class="col-md-1 control-label">1o.Registro</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtRGPRegistro" name="txtRGPRegistro">
+                </div>
+
+                <label for="txtRGPEmissor" class="col-md-1 control-label">Órgão Emissor</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtRGPEmissor" name="txtRGPEmissor">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtProf" class="col-md-1 control-label">Profissão</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtProf" name="txtProf">
+                </div>
+
+                <label for="txtCat" class="col-md-1 control-label">Categoria</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtCat" name="txtCat">
+                </div>
+
+                <label for="txtAtuacao" class="col-md-1 control-label">Área Atuação</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" id="txtAtuacao" name="txtAtuacao">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="selectRelacao" class="col-md-2 control-label">Relação de Trabalho</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="selectRelacao" name="selectRelacao">
+                        <option>PARCEIRO/MEEIRO</option>
+                        <option>INDIVIDUAL</option>
+                        <option>REGIME DE ECONOMIA FAMILIAR</option>
+                    </select>
+                </div>
+
+                <label for="selectutilizaEmbarca" class="col-md-3 control-label">Utiliza Embarcação na Atividade</label>
+                <div class="col-md-2">
+                    <select class="form-control" id="selectutilizaEmbarca" name="selectutilizaEmbarca">
+                        <option>SIM</option>
+                        <option>NÃO</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtNomeEmbarca" class="col-md-2 control-label">Nome Embarcação</label>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtNomeEmbarca" name="txtNomeEmbarca">
+                </div>
+
+                <label for="txtPropietario" class="col-md-1 control-label">Propietário</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtPropietario" name="txtPropietario">
+                </div>
+
+                <label for="txtTipo" class="col-md-1 control-label">Tipo</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtTipo" name="txtTipo">
+                </div>
+
+                <label for="txtTamanho" class="col-md-1 control-label">Tamanho</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtTamanho" name="txtTamanho">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtProp" class="col-md-1 control-label">Propulsão</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="txtProp" name="txtProp">
+                </div>
+                <label for="txtCapitania" class="col-md-2 control-label">N.Registro Cap.Portos</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtCapitania" name="txtCapitania">
+                </div>
+                <label for="txtRGPMPA" class="col-md-1 control-label">RGP/MPA</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtRGPMPA" name="txtRGPMPA">
                 </div>
             </div>
 
