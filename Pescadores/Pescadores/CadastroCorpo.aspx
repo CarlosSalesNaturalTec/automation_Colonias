@@ -17,6 +17,13 @@
             border: 1px solid;
             background: #ccc;
         }
+
+        form {
+            background: #ccc;
+            margin-top: 5%;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
     </style>
 
 </head>
@@ -33,14 +40,14 @@
                     <input type="text" class="form-control" id="txtNome" name="txtNome">
                 </div>
                 <label for="txtApelido" class="col-md-1 control-label">Apelido</label>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <input type="text" class="form-control" id="txtApelido" name="txtApelido">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="txtEndereco" class="col-md-1 control-label">Endereço</label>
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <input type="text" class="form-control" id="txtEndereco" name="txtEndereco">
                 </div>
                 <label for="txtCEP" class="col-md-1 control-label">CEP</label>
@@ -51,7 +58,7 @@
 
             <div class="form-group">
                 <label for="txtBairro" class="col-md-1 control-label">Bairro</label>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <input type="text" class="form-control" id="txtBairro" name="txtBairro">
                 </div>
                 <label for="txtMunicipio" class="col-md-1 control-label">Municipio</label>
@@ -255,11 +262,11 @@
             </div>
 
             <div class="form-group">
-                <label for="txtProp" class="col-md-1 control-label">Propulsão</label>
-                <div class="col-md-4">
+                <label for="txtProp" class="col-md-2 control-label">Propulsão</label>
+                <div class="col-md-3">
                     <input type="text" class="form-control" id="txtProp" name="txtProp">
                 </div>
-                <label for="txtCapitania" class="col-md-2 control-label">N.Registro Cap.Portos</label>
+                <label for="txtCapitania" class="col-md-2 control-label">N. Registro Cap.Portos</label>
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="txtCapitania" name="txtCapitania">
                 </div>
@@ -269,9 +276,122 @@
                 </div>
             </div>
 
-            <br />
-            <legend>FOTO</legend>
+            <div class="form-group">
+                <label for="txtArtes" class="col-md-2 control-label">Principais artes de pesca utilizadas</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtArtes" name="txtArtes">
+                        <option>REDE DE ESPERA</option>
+                        <option>REDE BOIADA/RESSA</option>
+                        <option>ARRASTO/BALÃO</option>
+                        <option>REDINHA ARRASTO MANUAL</option>
+                        <option>LINHA COM ANZOL</option>
+                        <option>ESPINHEL</option>
+                        <option>GERERÉ/PUÇÁ</option>
+                        <option>MUNZUÁ</option>
+                        <option>COVO</option>
+                        <option>GROZEIRA</option>
+                        <option>OUTROS</option>
+                    </select>
+                </div>
+                <label for="txtDonoArtes" class="col-md-2 control-label">Dono das artes que você trabalha</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="txtDonoArtes" name="txtDonoArtes">
+                </div>
+            </div>
 
+            <div class="form-group">
+                <label for="txtProp" class="col-md-2 control-label">Principais Espécies Capturadas</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="txtPRincipais" name="txtPRincipais">
+                </div>
+                <label for="txtCapitania" class="col-md-2 control-label">Locais de venda da produção</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="txtLocais" name="txtLocais">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtComoComerc" class="col-md-2 control-label">Como o produto é comercializado</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtComoComerc" name="txtComoComerc">
+                        <option>FRESCO</option>
+                        <option>RESFRIADO</option>
+                        <option>CONGELADO</option>
+                        <option>SALGADO</option>
+                        <option>DEFUMADO</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtDiasTrab" class="col-md-2 control-label">Quantos dias trabalha / mês</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtDiasTrab" name="txtDiasTrab">
+                </div>
+
+                <label for="txtDuracao" class="col-md-2 control-label">Duração p/ dia por pescaria</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtDuracao" name="txtDuracao">
+                </div>
+
+                <label for="txtProdMedia" class="col-md-2 control-label">Produção média diária</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtProdMedia" name="txtProdMedia">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtVEndaPRod" class="col-md-2 control-label">Valor de venda do produto</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtVEndaPRod" name="txtVEndaPRod">
+                </div>
+
+                <label for="txtQuantConsumido" class="col-md-2 control-label">Quant. do produto consumido </label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtQuantConsumido" name="txtQuantConsumido">
+                </div>
+            </div>
+
+
+            <br />
+            <legend>INFORMAÇÕES SÓCIO ECONÔMICAS</legend>
+
+            <div class="form-group">
+                <label for="txtDependentes" class="col-md-2 control-label">Dependentes, quantos</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtDependentes" name="txtDependentes">
+                </div>
+
+                <label for="txtfilhosescola" class="col-md-2 control-label">Filhos na escola</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtfilhosescola" name="txtfilhosescola">
+                </div>
+
+                <label for="txtsegdefeso" class="col-md-2 control-label">Recebe Seguro Defeso</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtsegdefeso" name="txtsegdefeso">
+                </div>
+
+                <label for="txtBolsafamilia" class="col-md-2 control-label">Recebe Bolsa Familia</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="txtBolsafamilia" name="txtBolsafamilia">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtCasaPropia" class="col-md-2 control-label">Possui Casa Propia</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtCasaPropia" name="txtCasaPropia">
+                        <option>ALUGADA</option>
+                        <option>MORA COM OS PAIS</option>
+                        <option>MORA COM OS FILHOS</option>
+                    </select>
+                </div>
+            </div>
+
+            <br />
+
+            <legend>FOTO</legend>
             <!-- Camera -->
             <br />
             <div id="results"></div>
