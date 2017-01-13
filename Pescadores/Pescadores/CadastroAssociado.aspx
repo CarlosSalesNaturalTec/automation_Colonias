@@ -4,7 +4,7 @@
 
     <!-- page content -->
     
-        <iframe src="CadastroCorpo.aspx" height="2000px" width="100%" frameborder="0" name="iframe_a">
+        <iframe src="CadastroCorpo.aspx" height="3000px" width="100%" frameborder="0" name="iframe_a">
             <p>Seu browser não suporta iframes.</p>
         </iframe>
     

@@ -19,10 +19,10 @@
         }
 
         form {
-            background: #ccc;
-            margin-top: 5%;
-            margin-right: 5%;
-            margin-left: 5%;
+            background: #C1FFC1;
+            margin-top: 1%;
+            margin-right: 1%;
+            margin-left: 1%;
         }
     </style>
 
@@ -122,7 +122,7 @@
 
                 <label for="txtEmissao" class="col-md-1 control-label">D.Emissao</label>
                 <div class="col-md-2">
-                    <input type="text" class="form-control" id="txtEmissao" name="txtEmissao">
+                    <input type="date" class="form-control" id="txtEmissao" name="txtEmissao">
                 </div>
             </div>
 
@@ -294,7 +294,7 @@
                     </select>
                 </div>
                 <label for="txtDonoArtes" class="col-md-2 control-label">Dono das artes que você trabalha</label>
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <input type="text" class="form-control" id="txtDonoArtes" name="txtDonoArtes">
                 </div>
             </div>
@@ -326,7 +326,7 @@
             <div class="form-group">
                 <label for="txtDiasTrab" class="col-md-2 control-label">Quantos dias trabalha / mês</label>
                 <div class="col-md-1">
-                    <input type="text" class="form-control" id="txtDiasTrab" name="txtDiasTrab">
+                    <input type="number" class="form-control" id="txtDiasTrab" name="txtDiasTrab" value="0">
                 </div>
 
                 <label for="txtDuracao" class="col-md-2 control-label">Duração p/ dia por pescaria</label>
@@ -343,7 +343,7 @@
             <div class="form-group">
                 <label for="txtVEndaPRod" class="col-md-2 control-label">Valor de venda do produto</label>
                 <div class="col-md-1">
-                    <input type="text" class="form-control" id="txtVEndaPRod" name="txtVEndaPRod">
+                    <input type="number" class="form-control" id="txtVEndaPRod" name="txtVEndaPRod" value="0">
                 </div>
 
                 <label for="txtQuantConsumido" class="col-md-2 control-label">Quant. do produto consumido </label>
@@ -359,12 +359,12 @@
             <div class="form-group">
                 <label for="txtDependentes" class="col-md-2 control-label">Dependentes, quantos</label>
                 <div class="col-md-1">
-                    <input type="text" class="form-control" id="txtDependentes" name="txtDependentes">
+                    <input type="number" class="form-control" id="txtDependentes" name="txtDependentes" value="0">
                 </div>
 
                 <label for="txtfilhosescola" class="col-md-2 control-label">Filhos na escola</label>
                 <div class="col-md-1">
-                    <input type="text" class="form-control" id="txtfilhosescola" name="txtfilhosescola">
+                    <input type="number" class="form-control" id="txtfilhosescola" name="txtfilhosescola" value="0">
                 </div>
 
                 <label for="txtsegdefeso" class="col-md-2 control-label">Recebe Seguro Defeso</label>
@@ -386,6 +386,140 @@
                         <option>MORA COM OS PAIS</option>
                         <option>MORA COM OS FILHOS</option>
                     </select>
+                </div>
+                <label for="txtAguaEncan" class="col-md-2 control-label">Água encanada na residência</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtAguaEncan" name="txtAguaEncan">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtpossuiEnergia" class="col-md-2 control-label">Possui Casa Propia</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtpossuiEnergia" name="txtpossuiEnergia">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+                <label for="txtpossuiTelefone" class="col-md-2 control-label">Telefone</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtpossuiTelefone" name="txtpossuiTelefone">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtpossuiEsgoto" class="col-md-2 control-label">Rede de Esgoto</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtpossuiEsgoto" name="txtpossuiEsgoto">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+                <label for="txtPossuiCOmput" class="col-md-2 control-label">Computador com Internet</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtPossuiCOmput" name="txtPossuiCOmput">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtQuantPessoas" class="col-md-2 control-label">Quantas pessoas moram na residência</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtQuantPessoas" name="txtQuantPessoas">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+                <label for="txtQuantMenores" class="col-md-2 control-label">Quantos menores</label>
+                <div class="col-md-4">
+                   <input type="number" class="form-control" id="txtQuantMenores" name="txtQuantMenores" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtAposentado" class="col-md-2 control-label">Algum aposentado</label>
+                <div class="col-md-4">
+                    <select class="form-control" id="txtAposentado" name="txtAposentado">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+                <label for="txtRendaAtividade" class="col-md-2 control-label">Renda mensal na atividade</label>
+                <div class="col-md-4">
+                   <input type="number" class="form-control" id="txtRendaAtividade" name="txtRendaAtividade" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="TxtExerceOutra" class="col-md-2 control-label">Exerce outra atividade? Qual?</label>
+                <div class="col-md-4">
+                     <input type="text" class="form-control" id="TxtExerceOutra" name="TxtExerceOutra">
+                </div>
+                <label for="txtRendaOutra" class="col-md-2 control-label">Renda mensal na OUTRA atividade</label>
+                <div class="col-md-4">
+                   <input type="number" class="form-control" id="txtRendaOutra" name="txtRendaOutra" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtVAlorDefeso" class="col-md-2 control-label">Quanto recebe de Seguro Defeso</label>
+                <div class="col-md-4">
+                     <input type="number" class="form-control" id="txtVAlorDefeso" name="txtVAlorDefeso" value="0">
+                </div>
+                <label for="txtValorBolsaFam" class="col-md-2 control-label">Quanto recebe de Bolsa Familia</label>
+                <div class="col-md-4">
+                   <input type="number" class="form-control" id="txtValorBolsaFam" name="txtValorBolsaFam" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtRendaFamil" class="col-md-2 control-label">Total da Renda familiar</label>
+                <div class="col-md-4">
+                     <input type="number" class="form-control" id="txtRendaFamil" name="txtRendaFamil" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtTempoAssoc" class="col-md-2 control-label">Há quanto tempo é associado na colônia</label>
+                <div class="col-md-2">
+                     <input type="text" class="form-control" id="txtTempoAssoc" name="txtTempoAssoc">
+                </div>
+                <label for="txtEmdias" class="col-md-2 control-label">Está em dias com suas mensalidades</label>
+                <div class="col-md-2">
+                    <select class="form-control" id="txtEmdias" name="txtEmdias">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
+                </div>
+                <label for="txtValorMens" class="col-md-2 control-label">Qual o valor da Mensalidade</label>
+                <div class="col-md-2">
+                   <input type="number" class="form-control" id="txtValorMens" name="txtValorMens" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtMotivoInadimp" class="col-md-2 control-label">Se inadimplente, porquê?</label>
+                <div class="col-md-2">
+                     <input type="text" class="form-control" id="txtMotivoInadimp" name="txtMotivoInadimp">
+                </div>
+                <label for="txtSatisfeito" class="col-md-2 control-label">Está satisfeito com os serviços</label>
+                <div class="col-md-2">
+                   <input type="text" class="form-control" id="txtSatisfeito" name="txtSatisfeito">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtOpniao" class="col-md-2 control-label">Opnião sobre como melhorar o atendimento</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" rows="3" id="txtOpniao"></textarea>
                 </div>
             </div>
 
