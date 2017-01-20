@@ -65,14 +65,20 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Associados <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="Cadastro_Listagem.aspx">Pesquisa</a></li>
+                                <li><a href="Cadastro_Listagem.aspx">Pesquisar</a></li>
                                 <li class="divider"></li>
-                                <li><a href="Cadastro_Novo2.aspx">Cadastrar Novo</a></li>
+                                <li><a href="Cadastro_Novo2.aspx">Cadastrar</a></li>
+                            </ul>
+                        </li>  
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Novo<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="Pesquisa.aspx">Pesquisar</a></li>
                                 <li class="divider"></li>
-                                <li><a href="CadastroAssociado.aspx">Novo Layout</a></li>
+                                <li><a href="CadastroAssociado.aspx">Cadastrar</a></li>
                                 
                             </ul>
-                        </li>                 
+                        </li>                  
                     </ul>
                 </div>
             </div>

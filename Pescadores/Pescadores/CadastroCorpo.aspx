@@ -19,7 +19,7 @@
         }
 
         form {
-            background: #C1FFC1;
+            background: #B0E2FF;
             margin-top: 1%;
             margin-right: 1%;
             margin-left: 1%;
@@ -127,7 +127,7 @@
             </div>
 
             <div class="form-group">
-                <label for="txtTitulo" class="col-md-1 control-label">Titulo</label>
+                <label for="txtTitulo" class="col-md-1 control-label">Titulo Zona Setor</label>
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="txtTitulo" name="txtTitulo">
                 </div>
@@ -142,7 +142,7 @@
                     <input type="text" class="form-control" id="txtNIT" name="txtNIT">
                 </div>
 
-                <label for="txtCEI" class="col-md-1 control-label">CEI</label>
+                <label for="txtCEI" class="col-md-1 control-label">Matrúcula CEI</label>
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="txtCEI" name="txtCEI">
                 </div>
@@ -182,17 +182,17 @@
             <legend>INFORMAÇÕES PROFISSIONAIS</legend>
 
             <div class="form-group">
-                <label for="txtCTPS" class="col-md-1 control-label">CTPS</label>
+                <label for="txtCTPS" class="col-md-1 control-label">No. da CTPS</label>
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="txtCTPS" name="txtCTPS">
                 </div>
 
-                <label for="txtRGPAtual" class="col-md-1 control-label">RGP Atual</label>
+                <label for="txtRGPAtual" class="col-md-1 control-label">No. do RGP Atual</label>
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="txtRGPAtual" name="txtRGPAtual">
                 </div>
 
-                <label for="txtRGPRegistro" class="col-md-1 control-label">1o.Registro</label>
+                <label for="txtRGPRegistro" class="col-md-1 control-label">Data do 1o. Registro</label>
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="txtRGPRegistro" name="txtRGPRegistro">
                 </div>
@@ -241,22 +241,24 @@
 
             <div class="form-group">
                 <label for="txtNomeEmbarca" class="col-md-2 control-label">Nome Embarcação</label>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <input type="text" class="form-control" id="txtNomeEmbarca" name="txtNomeEmbarca">
                 </div>
 
-                <label for="txtPropietario" class="col-md-1 control-label">Propietário</label>
-                <div class="col-md-2">
+                <label for="txtPropietario" class="col-md-2 control-label">Propietário</label>
+                <div class="col-md-4">
                     <input type="text" class="form-control" id="txtPropietario" name="txtPropietario">
                 </div>
+            </div>
 
-                <label for="txtTipo" class="col-md-1 control-label">Tipo</label>
-                <div class="col-md-1">
+            <div class="form-group">
+                <label for="txtTipo" class="col-md-2 control-label">Tipo</label>
+                <div class="col-md-4">
                     <input type="text" class="form-control" id="txtTipo" name="txtTipo">
                 </div>
 
-                <label for="txtTamanho" class="col-md-1 control-label">Tamanho</label>
-                <div class="col-md-1">
+                <label for="txtTamanho" class="col-md-2 control-label">Tamanho</label>
+                <div class="col-md-4">
                     <input type="text" class="form-control" id="txtTamanho" name="txtTamanho">
                 </div>
             </div>
@@ -293,24 +295,30 @@
                         <option>OUTROS</option>
                     </select>
                 </div>
+                <label for="txtQuantArtes" class="col-md-2 control-label">Quantidade das artes de pesca</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="txtQuantArtes" name="txtQuantArtes">
+                </div>
+            </div>
+
+            <div class="form-group">
                 <label for="txtDonoArtes" class="col-md-2 control-label">Dono das artes que você trabalha</label>
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="txtDonoArtes" name="txtDonoArtes">
                 </div>
-            </div>
-
-            <div class="form-group">
+            
                 <label for="txtProp" class="col-md-2 control-label">Principais Espécies Capturadas</label>
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="txtPRincipais" name="txtPRincipais">
                 </div>
+            </div>
+
+            <div class="form-group">
                 <label for="txtCapitania" class="col-md-2 control-label">Locais de venda da produção</label>
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="txtLocais" name="txtLocais">
                 </div>
-            </div>
 
-            <div class="form-group">
                 <label for="txtComoComerc" class="col-md-2 control-label">Como o produto é comercializado</label>
                 <div class="col-md-4">
                     <select class="form-control" id="txtComoComerc" name="txtComoComerc">
@@ -334,20 +342,20 @@
                     <input type="text" class="form-control" id="txtDuracao" name="txtDuracao">
                 </div>
 
-                <label for="txtProdMedia" class="col-md-2 control-label">Produção média diária</label>
-                <div class="col-md-1">
+                <label for="txtProdMedia" class="col-md-2 control-label">Produção média diária (Kg)</label>
+                <div class="col-md-2">
                     <input type="text" class="form-control" id="txtProdMedia" name="txtProdMedia">
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="txtVEndaPRod" class="col-md-2 control-label">Valor de venda do produto</label>
-                <div class="col-md-1">
+                <label for="txtVEndaPRod" class="col-md-2 control-label">Valor de venda do produto (Kg)</label>
+                <div class="col-md-2">
                     <input type="number" class="form-control" id="txtVEndaPRod" name="txtVEndaPRod" value="0">
                 </div>
 
-                <label for="txtQuantConsumido" class="col-md-2 control-label">Quant. do produto consumido </label>
-                <div class="col-md-1">
+                <label for="txtQuantConsumido" class="col-md-2 control-label">Quant. do produto consumido (Kg)</label>
+                <div class="col-md-2">
                     <input type="text" class="form-control" id="txtQuantConsumido" name="txtQuantConsumido">
                 </div>
             </div>
@@ -369,12 +377,18 @@
 
                 <label for="txtsegdefeso" class="col-md-2 control-label">Recebe Seguro Defeso</label>
                 <div class="col-md-1">
-                    <input type="text" class="form-control" id="txtsegdefeso" name="txtsegdefeso">
+                    <select class="form-control" id="txtsegdefeso" name="txtsegdefeso">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
                 </div>
 
                 <label for="txtBolsafamilia" class="col-md-2 control-label">Recebe Bolsa Familia</label>
                 <div class="col-md-1">
-                    <input type="text" class="form-control" id="txtBolsafamilia" name="txtBolsafamilia">
+                    <select class="form-control" id="txtBolsafamilia" name="txtBolsafamilia">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
                 </div>
             </div>
 
@@ -397,7 +411,7 @@
             </div>
 
             <div class="form-group">
-                <label for="txtpossuiEnergia" class="col-md-2 control-label">Possui Casa Propia</label>
+                <label for="txtpossuiEnergia" class="col-md-2 control-label">Energia Elétrica</label>
                 <div class="col-md-4">
                     <select class="form-control" id="txtpossuiEnergia" name="txtpossuiEnergia">
                         <option>NÃO</option>
@@ -414,7 +428,7 @@
             </div>
 
             <div class="form-group">
-                <label for="txtpossuiEsgoto" class="col-md-2 control-label">Rede de Esgoto</label>
+                <label for="txtpossuiEsgoto" class="col-md-2 control-label">Rede de Esgoto na residência</label>
                 <div class="col-md-4">
                     <select class="form-control" id="txtpossuiEsgoto" name="txtpossuiEsgoto">
                         <option>NÃO</option>
@@ -470,11 +484,11 @@
             </div>
 
             <div class="form-group">
-                <label for="txtVAlorDefeso" class="col-md-2 control-label">Quanto recebe de Seguro Defeso</label>
+                <label for="txtVAlorDefeso" class="col-md-2 control-label">Quantas pessoas recebem Seguro Defeso na residencia</label>
                 <div class="col-md-4">
                      <input type="number" class="form-control" id="txtVAlorDefeso" name="txtVAlorDefeso" value="0">
                 </div>
-                <label for="txtValorBolsaFam" class="col-md-2 control-label">Quanto recebe de Bolsa Familia</label>
+                <label for="txtValorBolsaFam" class="col-md-2 control-label">Quantas pessoas recebem Bolsa Familia na residencia</label>
                 <div class="col-md-4">
                    <input type="number" class="form-control" id="txtValorBolsaFam" name="txtValorBolsaFam" value="0">
                 </div>
@@ -517,7 +531,7 @@
             </div>
 
             <div class="form-group">
-                <label for="txtOpniao" class="col-md-2 control-label">Opnião sobre como melhorar o atendimento</label>
+                <label for="txtOpniao" class="col-md-2 control-label">O que você sugere para melhorar o atendimento na colônia?</label>
                 <div class="col-md-10">
                     <textarea class="form-control" rows="3" id="txtOpniao"></textarea>
                 </div>

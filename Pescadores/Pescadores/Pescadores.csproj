@@ -144,7 +144,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="FichaAssociado.aspx" />
     <Content Include="ErroDefault.aspx" />
+    <Content Include="midias\pescador.JPG" />
     <Content Include="Painel.aspx" />
+    <Content Include="Pesquisa.aspx" />
     <Content Include="Scripts\webcam.js" />
     <Content Include="Suporte.aspx" />
     <Content Include="Cadastro_Listagem.aspx" />
@@ -259,6 +261,13 @@
       <DependentUpon>Painel.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Pesquisa.aspx.cs">
+      <DependentUpon>Pesquisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pesquisa.aspx.designer.cs">
+      <DependentUpon>Pesquisa.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Suporte.aspx.cs">
       <DependentUpon>Suporte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
