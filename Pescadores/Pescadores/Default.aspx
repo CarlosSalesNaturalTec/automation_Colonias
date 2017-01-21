@@ -2,10 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>GECOPE</h1>
-        <p class="lead">Cadastramento ON-LINE de Associados</p>
-    </div>
+    <br />
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/midias/pescador.JPG"/>
+    <p>.</p>
 
     <div class="row">
         <div class="col-lg-6">
@@ -40,7 +39,10 @@
         </div>
     </div>
 
-    <br />
-    <asp:Image ID="Image1" runat="server" ImageUrl="http://www.fepesba.com.br/wp-content/uploads/2016/05/topo.png" Width="95%" />
+    <div class="jumbotron">
+        <h1>GECOPE</h1>
+        <p class="lead">Cadastramento ON-LINE de Associados</p>
+    </div>
+
 
 </asp:Content>

@@ -147,7 +147,9 @@
     <Content Include="midias\pescador.JPG" />
     <Content Include="Painel.aspx" />
     <Content Include="Pesquisa.aspx" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\webcam.js" />
+    <Content Include="Sorry.aspx" />
     <Content Include="Suporte.aspx" />
     <Content Include="Cadastro_Listagem.aspx" />
     <Content Include="Cadastro_Novo.aspx" />
@@ -160,6 +162,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="WebService1.asmx" />
     <None Include="Properties\PublishProfiles\Pescadores9386.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -268,6 +271,13 @@
     <Compile Include="Pesquisa.aspx.designer.cs">
       <DependentUpon>Pesquisa.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sorry.aspx.cs">
+      <DependentUpon>Sorry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sorry.aspx.designer.cs">
+      <DependentUpon>Sorry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Suporte.aspx.cs">
       <DependentUpon>Suporte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -330,6 +340,10 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

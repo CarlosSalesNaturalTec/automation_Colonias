@@ -6,8 +6,7 @@
 <head runat="server">
 
     <link rel="stylesheet" href="~/Content/bootstrap.min.css">
-    <script src="~/Scripts/jquery.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js" ></script>
 
     <style type="text/css">
         #results {
@@ -28,7 +27,7 @@
 
 </head>
 
-<body>
+<body runat="server">
     <br />
     <form class="form-horizontal">
         <fieldset>
@@ -67,7 +66,7 @@
                 </div>
                 <label for="txtUF" class="col-md-1 control-label">Estado</label>
                 <div class="col-md-1">
-                    <input type="text" class="form-control" id="txtUF" name="txtUF">
+                    <input type="text" class="form-control" id="txtUF" name="txtUF" value="BA">
                 </div>
             </div>
 
@@ -306,7 +305,7 @@
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="txtDonoArtes" name="txtDonoArtes">
                 </div>
-            
+
                 <label for="txtProp" class="col-md-2 control-label">Principais Espécies Capturadas</label>
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="txtPRincipais" name="txtPRincipais">
@@ -454,7 +453,7 @@
                 </div>
                 <label for="txtQuantMenores" class="col-md-2 control-label">Quantos menores</label>
                 <div class="col-md-4">
-                   <input type="number" class="form-control" id="txtQuantMenores" name="txtQuantMenores" value="0">
+                    <input type="number" class="form-control" id="txtQuantMenores" name="txtQuantMenores" value="0">
                 </div>
             </div>
 
@@ -468,43 +467,43 @@
                 </div>
                 <label for="txtRendaAtividade" class="col-md-2 control-label">Renda mensal na atividade</label>
                 <div class="col-md-4">
-                   <input type="number" class="form-control" id="txtRendaAtividade" name="txtRendaAtividade" value="0">
+                    <input type="number" class="form-control" id="txtRendaAtividade" name="txtRendaAtividade" value="0">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="TxtExerceOutra" class="col-md-2 control-label">Exerce outra atividade? Qual?</label>
                 <div class="col-md-4">
-                     <input type="text" class="form-control" id="TxtExerceOutra" name="TxtExerceOutra">
+                    <input type="text" class="form-control" id="TxtExerceOutra" name="TxtExerceOutra">
                 </div>
                 <label for="txtRendaOutra" class="col-md-2 control-label">Renda mensal na OUTRA atividade</label>
                 <div class="col-md-4">
-                   <input type="number" class="form-control" id="txtRendaOutra" name="txtRendaOutra" value="0">
+                    <input type="number" class="form-control" id="txtRendaOutra" name="txtRendaOutra" value="0">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="txtVAlorDefeso" class="col-md-2 control-label">Quantas pessoas recebem Seguro Defeso na residencia</label>
                 <div class="col-md-4">
-                     <input type="number" class="form-control" id="txtVAlorDefeso" name="txtVAlorDefeso" value="0">
+                    <input type="number" class="form-control" id="txtVAlorDefeso" name="txtVAlorDefeso" value="0">
                 </div>
                 <label for="txtValorBolsaFam" class="col-md-2 control-label">Quantas pessoas recebem Bolsa Familia na residencia</label>
                 <div class="col-md-4">
-                   <input type="number" class="form-control" id="txtValorBolsaFam" name="txtValorBolsaFam" value="0">
+                    <input type="number" class="form-control" id="txtValorBolsaFam" name="txtValorBolsaFam" value="0">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="txtRendaFamil" class="col-md-2 control-label">Total da Renda familiar</label>
                 <div class="col-md-4">
-                     <input type="number" class="form-control" id="txtRendaFamil" name="txtRendaFamil" value="0">
+                    <input type="number" class="form-control" id="txtRendaFamil" name="txtRendaFamil" value="0">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="txtTempoAssoc" class="col-md-2 control-label">Há quanto tempo é associado na colônia</label>
                 <div class="col-md-2">
-                     <input type="text" class="form-control" id="txtTempoAssoc" name="txtTempoAssoc">
+                    <input type="text" class="form-control" id="txtTempoAssoc" name="txtTempoAssoc">
                 </div>
                 <label for="txtEmdias" class="col-md-2 control-label">Está em dias com suas mensalidades</label>
                 <div class="col-md-2">
@@ -515,18 +514,18 @@
                 </div>
                 <label for="txtValorMens" class="col-md-2 control-label">Qual o valor da Mensalidade</label>
                 <div class="col-md-2">
-                   <input type="number" class="form-control" id="txtValorMens" name="txtValorMens" value="0">
+                    <input type="number" class="form-control" id="txtValorMens" name="txtValorMens" value="0">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="txtMotivoInadimp" class="col-md-2 control-label">Se inadimplente, porquê?</label>
                 <div class="col-md-2">
-                     <input type="text" class="form-control" id="txtMotivoInadimp" name="txtMotivoInadimp">
+                    <input type="text" class="form-control" id="txtMotivoInadimp" name="txtMotivoInadimp">
                 </div>
                 <label for="txtSatisfeito" class="col-md-2 control-label">Está satisfeito com os serviços</label>
                 <div class="col-md-2">
-                   <input type="text" class="form-control" id="txtSatisfeito" name="txtSatisfeito">
+                    <input type="text" class="form-control" id="txtSatisfeito" name="txtSatisfeito">
                 </div>
             </div>
 
@@ -566,7 +565,7 @@
             <div class="form-group">
                 <div class="col-md-8 col-md-offset-1">
                     <button type="reset" class="btn btn-primary" onclick="cancelar()">Cancelar</button>
-                    <button type="button" class="btn btn-success" onclick="salvar()">Salvar</button>
+                    <button type="button" class="btn btn-success" onclick="salvar()" id="btSalvar">Salvar</button>
                 </div>
             </div>
 
@@ -634,11 +633,141 @@
         document.getElementById("txtNome").focus();
 
         function salvar() {
-            alert("Em Desenvolvimento");
+
+            var v1 = document.getElementById("txtNome").value
+            var v2 = document.getElementById("txtApelido").value
+            var v3 = document.getElementById("txtEndereco").value
+            var v4 = document.getElementById("txtCEP").value
+            var v5 = document.getElementById("txtBairro").value
+            var v6 = document.getElementById("txtMunicipio").value
+            var v7 = document.getElementById("txtUF").value
+            var v8 = document.getElementById("txtPai").value
+            var v9 = document.getElementById("txtMae").value
+            var v10 = ""
+
+            var v11 = document.getElementById("txtNascimento").value
+            var v12 = document.getElementById("txtNaturalidade").value
+            var v13 = document.getElementById("txtNacionalidade").value
+            var v14 = document.getElementById("txtEscolaridade").value
+            var v15 = document.getElementById("txtCPF").value
+            var v16 = document.getElementById("txtRG").value
+            var v17 = document.getElementById("txtEmissor").value
+            var v18 = document.getElementById("txtEmissao").value
+            var v19 = document.getElementById("txtTitulo").value
+            var v20 = document.getElementById("txtPIS").value
+
+            var v21 = document.getElementById("txtNIT").value
+            var v22 = document.getElementById("txtCEI").value
+            var v23 = document.getElementById("txtEstCivil").value
+            var v24 = document.getElementById("txtTelefone").value
+            var v25 = document.getElementById("txtemail").value
+            var v26 = document.getElementById("txtsexo").value
+            var v27 = document.getElementById("txtCTPS").value
+            var v28 = document.getElementById("txtRGPAtual").value
+            var v29 = document.getElementById("txtRGPRegistro").value
+            var v30 = document.getElementById("txtRGPEmissor").value
+
+            var v31 = document.getElementById("txtProf").value
+            var v32 = document.getElementById("txtCat").value
+            var v33 = document.getElementById("txtAtuacao").value
+            var v34 = document.getElementById("selectRelacao").value
+            var v35 = document.getElementById("selectutilizaEmbarca").value
+            var v36 = document.getElementById("txtNomeEmbarca").value
+            var v37 = document.getElementById("txtPropietario").value
+            var v38 = document.getElementById("txtTipo").value
+            var v39 = document.getElementById("txtTamanho").value
+            var v40 = document.getElementById("txtProp").value
+
+            var v41 = document.getElementById("txtCapitania").value
+            var v42 = document.getElementById("txtRGPMPA").value
+            var v43 = document.getElementById("txtArtes").value
+            var v44 = document.getElementById("txtQuantArtes").value
+            var v45 = document.getElementById("txtDonoArtes").value
+            var v46 = document.getElementById("txtPRincipais").value
+            var v47 = document.getElementById("txtLocais").value
+            var v48 = document.getElementById("txtComoComerc").value
+            var v49 = document.getElementById("txtDiasTrab").value
+            var v50 = document.getElementById("txtDuracao").value
+
+            var v51 = document.getElementById("txtProdMedia").value
+            var v52 = document.getElementById("txtVEndaPRod").value
+            var v53 = document.getElementById("txtQuantConsumido").value
+            var v54 = document.getElementById("txtDependentes").value
+            var v55 = document.getElementById("txtfilhosescola").value
+            var v56 = document.getElementById("txtsegdefeso").value
+            var v57 = document.getElementById("txtBolsafamilia").value
+            var v58 = document.getElementById("txtCasaPropia").value
+            var v59 = document.getElementById("txtAguaEncan").value
+            var v60 = document.getElementById("txtpossuiEnergia").value
+
+            var v61 = document.getElementById("txtpossuiTelefone").value
+            var v62 = document.getElementById("txtpossuiEsgoto").value
+            var v63 = document.getElementById("txtPossuiCOmput").value
+            var v64 = document.getElementById("txtQuantPessoas").value
+            var v65 = document.getElementById("txtQuantMenores").value
+            var v66 = document.getElementById("txtAposentado").value
+            var v67 = document.getElementById("txtRendaAtividade").value
+            var v68 = document.getElementById("TxtExerceOutra").value
+            var v69 = document.getElementById("txtRendaOutra").value
+            var v70 = document.getElementById("txtVAlorDefeso").value
+
+            var v71 = document.getElementById("txtValorBolsaFam").value
+            var v72 = document.getElementById("txtRendaFamil").value
+            var v73 = document.getElementById("txtTempoAssoc").value
+            var v74 = document.getElementById("txtEmdias").value
+            var v75 = document.getElementById("txtValorMens").value
+            var v76 = document.getElementById("txtMotivoInadimp").value
+            var v77 = document.getElementById("txtSatisfeito").value
+            var v78 = document.getElementById("txtOpniao").value
+            var v79 = document.getElementById("Hidden1").value
+            
+            if (v1 == "") {
+                document.getElementById("txtNome").focus();
+                alert("Informe Nome do Associado");
+                return;
+            }
+
+            document.getElementById("btSalvar").disabled = true;
+            $("body").css("cursor", "progress");
+
+            $.ajax({
+                type: "POST",
+                url: "WebService1.asmx/SalvarRegistro",
+                data: '{param1: "' + v1 + '", param2: "' + v2 + '", param3: "' + v3 + '", param4: "' + v4 + '", param5: "' + v5 +
+                    '", param6: "' + v6 + '", param7: "' + v7 + '", param8: "' + v8 + '", param9: "' + v9 + '", param10: "' + v10 +
+                    '", param11: "' + v11 + '", param12: "' + v12 + '", param13: "' + v13 + '", param14: "' + v14 + '", param15: "' + v15 +
+                    '", param16: "' + v16 + '", param17: "' + v17 + '", param18: "' + v18 + '", param19: "' + v19 + '", param20: "' + v20 +
+                    '", param21: "' + v21 + '", param22: "' + v22 + '", param23: "' + v23 + '", param24: "' + v24 + '", param25: "' + v25 +
+                    '", param26: "' + v26 + '", param27: "' + v27 + '", param28: "' + v28 + '", param29: "' + v29 + '", param30: "' + v30 +
+                    '", param31: "' + v31 + '", param32: "' + v32 + '", param33: "' + v33 + '", param34: "' + v34 + '", param35: "' + v35 +
+                    '", param36: "' + v36 + '", param37: "' + v37 + '", param38: "' + v38 + '", param39: "' + v39 + '", param40: "' + v40 +
+                    '", param41: "' + v41 + '", param42: "' + v42 + '", param43: "' + v43 + '", param44: "' + v44 + '", param45: "' + v45 +
+                    '", param46: "' + v46 + '", param47: "' + v47 + '", param48: "' + v48 + '", param49: "' + v49 + '", param50: "' + v50 +
+                    '", param51: "' + v51 + '", param52: "' + v52 + '", param53: "' + v53 + '", param54: "' + v54 + '", param55: "' + v55 +
+                    '", param56: "' + v56 + '", param57: "' + v57 + '", param58: "' + v58 + '", param59: "' + v59 + '", param60: "' + v60 +
+                    '", param61: "' + v61 + '", param62: "' + v62 + '", param63: "' + v63 + '", param64: "' + v64 + '", param65: "' + v65 +
+                    '", param66: "' + v66 + '", param67: "' + v67 + '", param68: "' + v68 + '", param69: "' + v69 + '", param70: "' + v70 +
+                    '", param71: "' + v71 + '", param72: "' + v72 + '", param73: "' + v73 + '", param74: "' + v74 + '", param75: "' + v75 +
+                    '", param76: "' + v76 + '", param77: "' + v77 + '", param78: "' + v78 + '", param79: "' + v79 + 
+                    '" }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    $("body").css("cursor", "default");
+                    alert("Ok");
+                    parent.document.location.href = response.d;
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
         }
+
         function cancelar() {
-            window.parent.location.href = "Default.aspx";
+            var linkurl = "../CadastroAssociado.aspx";
+            parent.document.location.href = linkurl;
         }
+
     </script>
 
 </body>
