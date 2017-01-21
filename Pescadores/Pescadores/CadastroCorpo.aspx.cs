@@ -11,7 +11,12 @@ namespace Pescadores
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string ScripID = "<script language=javascript>" +
+                   "document.getElementById('IDHidden').value = '" + Session["IDCol"].ToString() + "';" +
+                   "document.getElementById('ColoniaHidden').value = '" + Session["Colonia_Nome"].ToString() + "';" +
+                   "document.getElementById('EmissaoHidden').value = '" + DateTime.Now.ToString("dd/MM/yyyy") + "';" +
+            "</script>";
+            ClientScript.RegisterStartupScript(this.GetType(), "PegaID", ScripID);
         }
 
     }

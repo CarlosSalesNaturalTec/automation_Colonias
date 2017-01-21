@@ -558,6 +558,9 @@
                 </div>
             </div>
             <input id="Hidden1" name="fotouri" type="hidden" />
+            <input id="IDHidden" name="IDHidden"  type="text" />
+            <input id="ColoniaHidden" name="ColoniaHidden"  type="text" />
+            <input id="EmissaoHidden" name="EmissaoHidden"  type="text" />
             <!-- Camera -->
 
             <legend></legend>
@@ -632,7 +635,7 @@
 
         document.getElementById("txtNome").focus();
 
-        function salvar() {
+        function salvar(idcol) {
 
             var v1 = document.getElementById("txtNome").value
             var v2 = document.getElementById("txtApelido").value
@@ -720,6 +723,11 @@
             var v77 = document.getElementById("txtSatisfeito").value
             var v78 = document.getElementById("txtOpniao").value
             var v79 = document.getElementById("Hidden1").value
+
+            var v80 = document.getElementById("IDHidden").value
+            var v81 = document.getElementById("ColoniaHidden").value
+            var v82 = document.getElementById("EmissaoHidden").value
+
             
             if (v1 == "") {
                 document.getElementById("txtNome").focus();
@@ -748,7 +756,8 @@
                     '", param61: "' + v61 + '", param62: "' + v62 + '", param63: "' + v63 + '", param64: "' + v64 + '", param65: "' + v65 +
                     '", param66: "' + v66 + '", param67: "' + v67 + '", param68: "' + v68 + '", param69: "' + v69 + '", param70: "' + v70 +
                     '", param71: "' + v71 + '", param72: "' + v72 + '", param73: "' + v73 + '", param74: "' + v74 + '", param75: "' + v75 +
-                    '", param76: "' + v76 + '", param77: "' + v77 + '", param78: "' + v78 + '", param79: "' + v79 + 
+                    '", param76: "' + v76 + '", param77: "' + v77 + '", param78: "' + v78 + '", param79: "' + v79 + '", param80: "' + v80 +
+                    '", param81: "' + v81 + '", param82: "' + v82 + 
                     '" }',
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
