@@ -43,6 +43,7 @@ namespace Pescadores
                 "','" + param31 + "', '" + param32 + "','" + param33 + "','" + param34 + "','" + param35 + "','" + param36 + "','" + param37 + "','" + param38 + "','" + param39 + "','" + param40 +
                 "','" + param41 + "', '" + param42 + "','" + param43 + "','" + param44 + "','" + param45 + "','" + param46 + "','" + param47 + "','" + param48 + "','" + param49 + "','" + param50 +
                 "','" + param51 + "', '" + param52 + "','" + param53 + "','" + param54 + "','" + param55 + "','" + param56 + "','" + param57 + "','" + param58 + "','" + param59 + "','" + param60 +
+                "','" + param61 + "', '" + param62 + "','" + param63 + "','" + param64 + "','" + param65 + "','" + param66 + "','" + param67 + "','" + param68 + "','" + param69 + "','" + param70 +
                 "','" + param71 + "', '" + param72 + "','" + param73 + "','" + param74 + "','" + param75 + "','" + param76 + "','" + param77 + "','" + param78 + "'," + param79 + ",'" + param80 +
                 "','" + param81 + "'" +
                 ")";

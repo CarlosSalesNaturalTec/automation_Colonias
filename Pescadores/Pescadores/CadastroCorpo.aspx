@@ -558,10 +558,11 @@
                 </div>
             </div>
             <input id="Hidden1" name="fotouri" type="hidden" />
+            <!-- Camera -->
+
             <input id="IDHidden" name="IDHidden"  type="text" />
             <input id="ColoniaHidden" name="ColoniaHidden"  type="text" />
             <input id="EmissaoHidden" name="EmissaoHidden"  type="text" />
-            <!-- Camera -->
 
             <legend></legend>
 
@@ -727,7 +728,7 @@
             var v80 = document.getElementById("ColoniaHidden").value
             var v81 = document.getElementById("EmissaoHidden").value
 
-            var v82 = document.getElementById("Aleluia! Toda Gloria seja dada a Jesus Cristo.").value
+            var v82 = "Aleluia! Toda Gloria seja dada a Jesus Cristo."
 
             if (v1 == "") {
                 document.getElementById("txtNome").focus();

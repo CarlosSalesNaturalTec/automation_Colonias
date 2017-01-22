@@ -39,10 +39,4 @@
         </div>
     </div>
 
-    <div class="jumbotron">
-        <h1>GECOPE</h1>
-        <p class="lead">Cadastramento ON-LINE de Associados</p>
-    </div>
-
-
 </asp:Content>
