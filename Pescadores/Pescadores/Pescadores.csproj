@@ -138,10 +138,11 @@
   <ItemGroup>
     <Content Include="CadastroAssociado.aspx" />
     <Content Include="Cadastro_Alterar.aspx" />
-    <Content Include="Cadastro_Novo2.aspx" />
+    <Content Include="historicoversoes\Cadastro_Novo2.aspx" />
     <Content Include="CadastroCorpo.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="FichaAssociado2.aspx" />
     <Content Include="FichaAssociado.aspx" />
     <Content Include="ErroDefault.aspx" />
     <Content Include="midias\pescador.JPG" />
@@ -150,10 +151,10 @@
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\webcam.js" />
     <Content Include="Sorry.aspx" />
-    <Content Include="Suporte.aspx" />
+    <Content Include="historicoversoes\Suporte.aspx" />
     <Content Include="Cadastro_Listagem.aspx" />
-    <Content Include="Cadastro_Novo.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="historicoversoes\Cadastro_Novo.aspx" />
+    <Content Include="historicoversoes\Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -202,7 +203,7 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
+    <None Include="historicoversoes\Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
@@ -228,11 +229,11 @@
     <Compile Include="Cadastro_Alterar.aspx.designer.cs">
       <DependentUpon>Cadastro_Alterar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cadastro_Novo2.aspx.cs">
+    <Compile Include="historicoversoes\Cadastro_Novo2.aspx.cs">
       <DependentUpon>Cadastro_Novo2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cadastro_Novo2.aspx.designer.cs">
+    <Compile Include="historicoversoes\Cadastro_Novo2.aspx.designer.cs">
       <DependentUpon>Cadastro_Novo2.aspx</DependentUpon>
     </Compile>
     <Compile Include="CadastroCorpo.aspx.cs">
@@ -241,6 +242,13 @@
     </Compile>
     <Compile Include="CadastroCorpo.aspx.designer.cs">
       <DependentUpon>CadastroCorpo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FichaAssociado2.aspx.cs">
+      <DependentUpon>FichaAssociado2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FichaAssociado2.aspx.designer.cs">
+      <DependentUpon>FichaAssociado2.aspx</DependentUpon>
     </Compile>
     <Compile Include="FichaAssociado.aspx.cs">
       <DependentUpon>FichaAssociado.aspx</DependentUpon>
@@ -278,11 +286,11 @@
     <Compile Include="Sorry.aspx.designer.cs">
       <DependentUpon>Sorry.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Suporte.aspx.cs">
+    <Compile Include="historicoversoes\Suporte.aspx.cs">
       <DependentUpon>Suporte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Suporte.aspx.designer.cs">
+    <Compile Include="historicoversoes\Suporte.aspx.designer.cs">
       <DependentUpon>Suporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -293,19 +301,19 @@
     <Compile Include="Cadastro_Listagem.aspx.designer.cs">
       <DependentUpon>Cadastro_Listagem.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cadastro_Novo.aspx.cs">
+    <Compile Include="historicoversoes\Cadastro_Novo.aspx.cs">
       <DependentUpon>Cadastro_Novo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cadastro_Novo.aspx.designer.cs">
+    <Compile Include="historicoversoes\Cadastro_Novo.aspx.designer.cs">
       <DependentUpon>Cadastro_Novo.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConexaoBancoSQL.cs" />
-    <Compile Include="Contact.aspx.cs">
+    <Compile Include="historicoversoes\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
+    <Compile Include="historicoversoes\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">

@@ -10,7 +10,7 @@
 namespace Pescadores {
     
     
-    public partial class FichaAssociado {
+    public partial class FichaAssociado2 {
         
         /// <summary>
         /// Image1 control.
@@ -245,24 +245,6 @@ namespace Pescadores {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTitulo;
-        
-        /// <summary>
-        /// lblZona control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblZona;
-        
-        /// <summary>
-        /// lblSecao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSecao;
         
         /// <summary>
         /// lblPIS control.

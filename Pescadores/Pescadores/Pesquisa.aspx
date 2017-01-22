@@ -18,12 +18,14 @@
 	    <script>
 	    $(document).ready(function(){
 	        $('#tabelaCli').DataTable({
-		    	"language": {
+	            "language": {
+	                "processing": "Aguarde! Processando...",
+	                "loadingRecords": "Aguarde! Carregando dados...",
 		            "lengthMenu": "Mostrando _MENU_ registros por página",
 		            "zeroRecords": "Nada encontrado",
-		            "info": "Mostrando página _PAGE_ de _PAGES_",
+		            "info": "Total de Registros:  _MAX_ ",
 		            "infoEmpty": "Nenhum registro disponível",
-		            "infoFiltered": "(filtrado de _MAX_ registros no total)",
+		            "infoFiltered": "(filtrado)",
 		            "search": "Pesquisa"
 		        }
 		    });

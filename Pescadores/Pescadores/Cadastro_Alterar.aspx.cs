@@ -21,7 +21,8 @@ namespace Pescadores
         protected void BtSalvar(object sender, EventArgs e)
         {
             string FotoDataUri = Request["fotouri"].ToString();
-            string stringupdate = "update Tbl_Associados set Nome = '" + txtNome.Text + "', " +
+            string stringupdate = "update Tbl_Associados set " +
+                "Nome = '" + txtNome.Text + "', " +
                 "Apelido = '" + txtApelido.Text + "', " +
                 "Endereco = '" + txtEndereco.Text + "', " +
                 "Bairro  = '" + txtBairro.Text + "', " +
@@ -41,8 +42,6 @@ namespace Pescadores
                 "NIT  = '" + txtNIT.Text + "', " +
                 "CEI  = '" + txtCEI.Text + "', " +
                 "Titulo  = '" + txtTitulo.Text + "', " +
-                "Titulo_Zona  = '" + txtZOna.Text + "', " +
-                "Titulo_Secao  = '" + txtSecao.Text + "', " +
                 "Estado_Civil  = '" + txtEstCivil.Text + "', " +
                 "Sexo  = '" + txtsexo.Text + "', " +
                 "Telefone  = '" + txtTelefone.Text + "', " +
@@ -151,8 +150,8 @@ namespace Pescadores
                 txtPIS.Text = Convert.ToString(rcrdset[16]);
                 txtNIT.Text = Convert.ToString(rcrdset[17]);
                 txtTitulo.Text = Convert.ToString(rcrdset[18]);
-                txtZOna.Text = Convert.ToString(rcrdset[19]);
-                txtSecao.Text = Convert.ToString(rcrdset[20]);
+                //txtZOna.Text = Convert.ToString(rcrdset[19]);
+                //txtSecao.Text = Convert.ToString(rcrdset[20]);
                 txtCEI.Text = Convert.ToString(rcrdset[21]);
                 txtEstCivil.Text = Convert.ToString(rcrdset[22]);
                 txtTelefone.Text = Convert.ToString(rcrdset[23]);

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Pescadores
 {
@@ -11,12 +6,14 @@ namespace Pescadores
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string ScripID = "<script language=javascript>" +
-                   "document.getElementById('IDHidden').value = '" + Session["IDCol"].ToString() + "';" +
-                   "document.getElementById('ColoniaHidden').value = '" + Session["Colonia_Nome"].ToString() + "';" +
-                   "document.getElementById('EmissaoHidden').value = '" + DateTime.Now.ToString("dd/MM/yyyy") + "';" +
-            "</script>";
-            ClientScript.RegisterStartupScript(this.GetType(), "PegaID", ScripID);
+
+            if (!IsPostBack)
+            {
+                IDHidden.Value = Session["IDCol"].ToString();
+                ColoniaHidden.Value = Session["Colonia_Nome"].ToString();
+                EmissaoHidden.Value = DateTime.Now.ToString("dd/MM/yyyy");
+            }
+
         }
 
     }

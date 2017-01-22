@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Ficha Associado" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FichaAssociado.aspx.cs" Inherits="Pescadores.FichaAssociado" %>
+﻿<%@ Page Title="Ficha Associado" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FichaAssociado2.aspx.cs" Inherits="Pescadores.FichaAssociado2" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
@@ -41,7 +41,7 @@
             <td><b>ENDEREÇO:</b> <asp:Label ID="lblEND" runat="server"></asp:Label></td>
             <td><b>BAIRRO:</b> <asp:Label ID="lblBairro" runat="server"></asp:Label></td>
             <td><b>CEP: </b><asp:Label ID="lblCEP" runat="server"></asp:Label>  </td>
-            <td><b>MUNICÍPIO:</b> <asp:Label ID="lblMunicipio" runat="server"></asp:Label>. UF: <asp:Label ID="lblUF" runat="server"></asp:Label></td>
+            <td><b>MUNICÍPIO:</b> <asp:Label ID="lblMunicipio" runat="server"></asp:Label>.<b> UF:</b> <asp:Label ID="lblUF" runat="server"></asp:Label></td>
         </tr>
         <tr>
             <td><b>NASCIMENTO:</b> <asp:Label ID="lblNascimento" runat="server"></asp:Label></td>
@@ -66,8 +66,6 @@
     <table style="width:100%">
         <tr>
             <td><b>TITULO ELEITOR: </b><asp:Label ID="lblTitulo" runat="server"></asp:Label></td>
-            <td><b>ZONA:</b> <asp:Label ID="lblZona" runat="server"></asp:Label></td>
-            <td><b>SEÇÃO:</b> <asp:Label ID="lblSecao" runat="server"></asp:Label></td>
             <td><b>PIS:</b> <asp:Label ID="lblPIS" runat="server"></asp:Label></td>
             <td><b>NIT: </b><asp:Label ID="lblNIT" runat="server"></asp:Label></td>
             <td><b>CEI:</b> <asp:Label ID="lblCEI" runat="server"></asp:Label></td>

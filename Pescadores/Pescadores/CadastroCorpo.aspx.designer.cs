@@ -11,5 +11,32 @@ namespace Pescadores {
     
     
     public partial class CadastroCorpo {
+        
+        /// <summary>
+        /// ColoniaHidden control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText ColoniaHidden;
+        
+        /// <summary>
+        /// EmissaoHidden control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText EmissaoHidden;
+        
+        /// <summary>
+        /// IDHidden control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText IDHidden;
     }
 }

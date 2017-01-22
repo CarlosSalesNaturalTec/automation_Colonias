@@ -58,27 +58,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">GECOPE</a>
+                    <a class="navbar-brand" runat="server" href="Painel.aspx">GECOPE</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Associados <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="Cadastro_Listagem.aspx">Pesquisar</a></li>
-                                <li class="divider"></li>
-                                <li><a href="Cadastro_Novo2.aspx">Cadastrar</a></li>
-                            </ul>
-                        </li>  
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Novo<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
                                 <li><a href="Pesquisa.aspx">Pesquisar</a></li>
                                 <li class="divider"></li>
+                                <li><a href="Cadastro_Listagem.aspx">Alterar</a></li>
+                                <li class="divider"></li>
                                 <li><a href="CadastroAssociado.aspx">Cadastrar</a></li>
-                                
                             </ul>
-                        </li>                  
+                        </li>                   
                     </ul>
                 </div>
             </div>

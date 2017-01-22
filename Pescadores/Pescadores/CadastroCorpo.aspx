@@ -6,7 +6,7 @@
 <head runat="server">
 
     <link rel="stylesheet" href="~/Content/bootstrap.min.css">
-    <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
 
     <style type="text/css">
         #results {
@@ -28,6 +28,7 @@
 </head>
 
 <body runat="server">
+
     <br />
     <form class="form-horizontal">
         <fieldset>
@@ -536,6 +537,15 @@
                 </div>
             </div>
 
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                     <input id="ColoniaHidden" runat="server" type="text"  disabled/>
+                     <input id="EmissaoHidden" runat="server" type="text" disabled />
+                     <input id="IDHidden" runat="server" type="text" disabled />
+                </div>
+            </div>
+
             <br />
 
             <legend>FOTO</legend>
@@ -558,11 +568,7 @@
                 </div>
             </div>
             <input id="Hidden1" name="fotouri" type="hidden" />
-            <!-- Camera -->
-
-            <input id="IDHidden" name="IDHidden"  type="text" />
-            <input id="ColoniaHidden" name="ColoniaHidden"  type="text" />
-            <input id="EmissaoHidden" name="EmissaoHidden"  type="text" />
+            <!-- Camera -->             
 
             <legend></legend>
 
@@ -758,7 +764,7 @@
                     '", param66: "' + v66 + '", param67: "' + v67 + '", param68: "' + v68 + '", param69: "' + v69 + '", param70: "' + v70 +
                     '", param71: "' + v71 + '", param72: "' + v72 + '", param73: "' + v73 + '", param74: "' + v74 + '", param75: "' + v75 +
                     '", param76: "' + v76 + '", param77: "' + v77 + '", param78: "' + v78 + '", param79: "' + v79 + '", param80: "' + v80 +
-                    '", param81: "' + v81 + '", param82: "' + v82 + 
+                    '", param81: "' + v81 + '", param82: "' + v82 +
                     '" }',
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",

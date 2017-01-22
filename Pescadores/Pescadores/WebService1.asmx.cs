@@ -27,6 +27,7 @@ namespace Pescadores
             string param71, string param72, string param73, string param74, string param75, string param76, string param77, string param78, string param79, string param80,
             string param81, string param82)
         {            
+
             string stringinsert = "insert into Tbl_Associados (Nome,Apelido,Endereco,CEP,Bairro,Cidade ,UF,Filiacao_Pai,Filiacao_Mae,Nascimento, " +
                 "Naturalidade,Nacionalidade,Escolaridade,CPF,RG,RG_Orgao,RG_Data_Exped,Titulo,PIS,NIT, " +
                 "CEI,Estado_Civil , Telefone ,email , sexo,CTPS ,RGP ,RGP_Registro ,RGP_emissor, Profissao, " +

@@ -3,17 +3,18 @@ using System.Web.UI;
 
 namespace Pescadores
 {
-    public partial class FichaAssociado : Page
+    public partial class FichaAssociado2 : Page
     {
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+
+                lblIDAssociado.Text = Request["IDAssoc"].ToString();
+
                 lblIDColonia.Text = Session["IDCol"].ToString();
                 lblColonia.Text = Session["Colonia_Nome"].ToString();
-                lblIDAssociado.Text = Session["IDAssoc"].ToString();
-
                 lblCidade.Text = Session["Colonia_Cidade"].ToString();
                 lblUFColonia.Text = Session["Colonia_UF"].ToString();
 
@@ -50,7 +51,7 @@ namespace Pescadores
                     "pessoas_Resid, pessoas_Menores , pessoas_aposentados, " +
                     "renda_mensal, outra_atividade, renda_outra, " +
                     "valor_Seguro_desemprego,valor_bolsa_familia ,total_renda_familiar ,  " +
-                    "tempo_associado, mensalidade_em_dias ,valor_mensalidade,motivo_inadimp ,satisfeito ,opniao, FotoDataURI, Arte_Quant " +
+                    "tempo_associado, mensalidade_em_dias ,valor_mensalidade,motivo_inadimp ,satisfeito ,opniao, FotoDataURI,Arte_Quant  " +
                     "from Tbl_Associados " + 
                     "where ID_Associado = " + lblIDAssociado.Text);
 
@@ -80,8 +81,8 @@ namespace Pescadores
                 lblEmissor.Text = Convert.ToString(dados[16]);
 
                 lblTitulo.Text = Convert.ToString(dados[17]);
-                lblZona.Text = Convert.ToString(dados[18]);
-                lblSecao.Text = Convert.ToString(dados[19]);
+                //lblZona.Text = Convert.ToString(dados[18]);
+                //lblSecao.Text = Convert.ToString(dados[19]);
 
                 lblPIS.Text = Convert.ToString(dados[20]);
                 lblNIT.Text = Convert.ToString(dados[21]);
@@ -153,7 +154,6 @@ namespace Pescadores
                 lblinadimp.Text = Convert.ToString(dados[75]);
                 lblsatisfeito.Text = Convert.ToString(dados[76]);
                 lblOpniao.Text = Convert.ToString(dados[77]);
-
                 lblArtesQuant.Text = Convert.ToString(dados[79]);
 
                 //monta foto

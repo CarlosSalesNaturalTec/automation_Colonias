@@ -168,12 +168,6 @@
             <asp:Label ID="Label19" runat="server" Text="Titulo"></asp:Label>
         </div>
         <div class="col-sm-2">
-            <asp:Label ID="Label20" runat="server" Text="ZOna"></asp:Label>
-        </div>
-        <div class="col-sm-2">
-            <asp:Label ID="Label21" runat="server" Text="Seção"></asp:Label>
-        </div>
-        <div class="col-sm-2">
             <asp:Label ID="Label22" runat="server" Text="CEI"></asp:Label>
         </div>
         <div class="col-sm-2">
@@ -187,12 +181,6 @@
     <div class="row">
         <div class="col-sm-2">
             <asp:TextBox ID="txtTitulo" runat="server"></asp:TextBox>
-        </div>
-        <div class="col-sm-2">
-            <asp:TextBox ID="txtZOna" runat="server"></asp:TextBox>
-        </div>
-        <div class="col-sm-2">
-            <asp:TextBox ID="txtSecao" runat="server"></asp:TextBox>
         </div>
         <div class="col-sm-2">
             <asp:TextBox ID="txtCEI" runat="server"></asp:TextBox>
