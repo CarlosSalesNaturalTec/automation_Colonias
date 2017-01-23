@@ -351,7 +351,7 @@
             <div class="form-group">
                 <label for="txtVEndaPRod" class="col-md-2 control-label">Valor de venda do produto (Kg)</label>
                 <div class="col-md-2">
-                    <input type="number" class="form-control" id="txtVEndaPRod" name="txtVEndaPRod" value="0">
+                    <input type="text" class="form-control" id="txtVEndaPRod" name="txtVEndaPRod">
                 </div>
 
                 <label for="txtQuantConsumido" class="col-md-2 control-label">Quant. do produto consumido (Kg)</label>
@@ -396,6 +396,7 @@
                 <label for="txtCasaPropia" class="col-md-2 control-label">Possui Casa Propia</label>
                 <div class="col-md-4">
                     <select class="form-control" id="txtCasaPropia" name="txtCasaPropia">
+                         <option>SIM</option>
                         <option>ALUGADA</option>
                         <option>MORA COM OS PAIS</option>
                         <option>MORA COM OS FILHOS</option>
@@ -447,10 +448,7 @@
             <div class="form-group">
                 <label for="txtQuantPessoas" class="col-md-2 control-label">Quantas pessoas moram na residência</label>
                 <div class="col-md-4">
-                    <select class="form-control" id="txtQuantPessoas" name="txtQuantPessoas">
-                        <option>NÃO</option>
-                        <option>SIM</option>
-                    </select>
+                     <input type="number" class="form-control" id="txtQuantPessoas" name="txtQuantPessoas" value="0">
                 </div>
                 <label for="txtQuantMenores" class="col-md-2 control-label">Quantos menores</label>
                 <div class="col-md-4">

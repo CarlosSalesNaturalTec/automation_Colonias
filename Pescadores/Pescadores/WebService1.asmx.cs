@@ -54,9 +54,23 @@ namespace Pescadores
             bool inserir = operacao.Insert(stringinsert);
             ConexaoBancoSQL.fecharConexao();
 
+            //verifica ID e vai para pagina de impressao
+            string idassociado = "";
+            string stringSelect = @"select ID_Associado from Tbl_Associados" +
+               " where (ID_Colonia = " + param79 +
+               " and nome ='" + param1 + "') order by ID_Associado desc";
+
+            OperacaoBanco operacao2 = new OperacaoBanco();
+            System.Data.SqlClient.SqlDataReader rcrdset2 = operacao2.Select(stringSelect);
+            while (rcrdset2.Read())
+            {
+                idassociado = Convert.ToString(rcrdset2[0]);
+            }
+            ConexaoBancoSQL.fecharConexao();
+
             if (inserir == true)
             {
-                url = "../CadastroAssociado.aspx";
+                url = "../FichaAssociado2.aspx?IDAssoc=" + idassociado;
             }
             else
             {
