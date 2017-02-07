@@ -271,7 +271,7 @@
             <asp:Label ID="Label36" runat="server" Text="Nome da Embarcação"></asp:Label>
         </div>
         <div class="col-sm-2">
-            <asp:Label ID="Label37" runat="server" Text="Propietário"></asp:Label>
+            <asp:Label ID="Label37" runat="server" Text="Proprietário"></asp:Label>
         </div>
         <div class="col-sm-2">
             <asp:Label ID="Label38" runat="server" Text="Tipo"></asp:Label>

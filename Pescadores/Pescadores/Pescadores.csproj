@@ -138,6 +138,7 @@
   <ItemGroup>
     <Content Include="CadastroAssociado.aspx" />
     <Content Include="Cadastro_Alterar.aspx" />
+    <Content Include="CarteiraProv.aspx" />
     <Content Include="historicoversoes\Cadastro_Novo2.aspx" />
     <Content Include="CadastroCorpo.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -145,6 +146,7 @@
     <Content Include="FichaAssociado2.aspx" />
     <Content Include="FichaAssociado.aspx" />
     <Content Include="ErroDefault.aspx" />
+    <Content Include="midias\logo.png" />
     <Content Include="midias\pescador.JPG" />
     <Content Include="Painel.aspx" />
     <Content Include="Pesquisa.aspx" />
@@ -228,6 +230,13 @@
     </Compile>
     <Compile Include="Cadastro_Alterar.aspx.designer.cs">
       <DependentUpon>Cadastro_Alterar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarteiraProv.aspx.cs">
+      <DependentUpon>CarteiraProv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarteiraProv.aspx.designer.cs">
+      <DependentUpon>CarteiraProv.aspx</DependentUpon>
     </Compile>
     <Compile Include="historicoversoes\Cadastro_Novo2.aspx.cs">
       <DependentUpon>Cadastro_Novo2.aspx</DependentUpon>

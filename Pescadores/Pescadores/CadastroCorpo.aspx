@@ -142,7 +142,7 @@
                     <input type="text" class="form-control" id="txtNIT" name="txtNIT">
                 </div>
 
-                <label for="txtCEI" class="col-md-1 control-label">Matrúcula CEI</label>
+                <label for="txtCEI" class="col-md-1 control-label">Matrícula CEI</label>
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="txtCEI" name="txtCEI">
                 </div>
@@ -245,7 +245,7 @@
                     <input type="text" class="form-control" id="txtNomeEmbarca" name="txtNomeEmbarca">
                 </div>
 
-                <label for="txtPropietario" class="col-md-2 control-label">Propietário</label>
+                <label for="txtPropietario" class="col-md-2 control-label">Proprietário</label>
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="txtPropietario" name="txtPropietario">
                 </div>
@@ -266,7 +266,10 @@
             <div class="form-group">
                 <label for="txtProp" class="col-md-2 control-label">Propulsão</label>
                 <div class="col-md-3">
-                    <input type="text" class="form-control" id="txtProp" name="txtProp">
+                    <select class="form-control" id="txtProp" name="txtProp">
+                        <option>REMO</option>
+                        <option>MOTOR</option>
+                    </select>
                 </div>
                 <label for="txtCapitania" class="col-md-2 control-label">N. Registro Cap.Portos</label>
                 <div class="col-md-2">
@@ -393,7 +396,7 @@
             </div>
 
             <div class="form-group">
-                <label for="txtCasaPropia" class="col-md-2 control-label">Possui Casa Propia</label>
+                <label for="txtCasaPropia" class="col-md-2 control-label">Possui Casa Própria</label>
                 <div class="col-md-4">
                     <select class="form-control" id="txtCasaPropia" name="txtCasaPropia">
                          <option>SIM</option>
@@ -464,7 +467,7 @@
                         <option>SIM</option>
                     </select>
                 </div>
-                <label for="txtRendaAtividade" class="col-md-2 control-label">Renda mensal na atividade</label>
+                <label for="txtRendaAtividade" class="col-md-2 control-label">Renda mensal na atividade R$</label>
                 <div class="col-md-4">
                     <input type="number" class="form-control" id="txtRendaAtividade" name="txtRendaAtividade" value="0">
                 </div>
@@ -475,7 +478,7 @@
                 <div class="col-md-4">
                     <input type="text" class="form-control" id="TxtExerceOutra" name="TxtExerceOutra">
                 </div>
-                <label for="txtRendaOutra" class="col-md-2 control-label">Renda mensal na OUTRA atividade</label>
+                <label for="txtRendaOutra" class="col-md-2 control-label">Renda mensal OUTRA atividade R$</label>
                 <div class="col-md-4">
                     <input type="number" class="form-control" id="txtRendaOutra" name="txtRendaOutra" value="0">
                 </div>
@@ -493,7 +496,7 @@
             </div>
 
             <div class="form-group">
-                <label for="txtRendaFamil" class="col-md-2 control-label">Total da Renda familiar</label>
+                <label for="txtRendaFamil" class="col-md-2 control-label">Total da Renda familiar R$</label>
                 <div class="col-md-4">
                     <input type="number" class="form-control" id="txtRendaFamil" name="txtRendaFamil" value="0">
                 </div>
@@ -511,7 +514,7 @@
                         <option>SIM</option>
                     </select>
                 </div>
-                <label for="txtValorMens" class="col-md-2 control-label">Qual o valor da Mensalidade</label>
+                <label for="txtValorMens" class="col-md-2 control-label">Qual o valor da Mensalidade R$</label>
                 <div class="col-md-2">
                     <input type="number" class="form-control" id="txtValorMens" name="txtValorMens" value="0">
                 </div>
@@ -524,7 +527,10 @@
                 </div>
                 <label for="txtSatisfeito" class="col-md-2 control-label">Está satisfeito com os serviços</label>
                 <div class="col-md-2">
-                    <input type="text" class="form-control" id="txtSatisfeito" name="txtSatisfeito">
+                    <select class="form-control" id="txtSatisfeito" name="txtSatisfeito">
+                        <option>NÃO</option>
+                        <option>SIM</option>
+                    </select>
                 </div>
             </div>
 

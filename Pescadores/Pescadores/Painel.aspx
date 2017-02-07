@@ -5,6 +5,7 @@
     <br />
     <asp:Image ID="Image1" runat="server" ImageUrl="~/midias/pescador.JPG" />
     <br />
+    <h1>GECOPE</h1>
     <h3 class="text-danger">
         <asp:Label ID="lblColonia" runat="server" Text=""></asp:Label></h3>
     <br />

@@ -12,6 +12,7 @@
             <div class="well bs-component">
                 <form class="form-horizontal">
                     <fieldset>
+                        <h1>GECOPE</h1>
                         <div class="form-group">
                             <label for="inputUser" class="col-lg-2 control-label">Usuário</label>
                             <div class="col-lg-10">
