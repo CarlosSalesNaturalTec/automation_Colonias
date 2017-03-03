@@ -53,9 +53,8 @@ namespace Pescadores
 
             while (dados.Read())
             {
-                string linkUrl = "<a href=\"CarteiraProv.aspx?IDAssoc=" + Convert.ToString(dados[4]) + "\" target=\"_self\">";
 
-                string Coluna1 = linkUrl + Convert.ToString(dados[0]) + "</a>";
+                string Coluna1 = Convert.ToString(dados[0]);
                 string Coluna2 = Convert.ToString(dados[1]);
                 string Coluna3 = Convert.ToString(dados[2]);
                 string Coluna4 = Convert.ToString(dados[3]);

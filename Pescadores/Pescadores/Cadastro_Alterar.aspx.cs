@@ -46,7 +46,7 @@ namespace Pescadores
                 "Sexo  = '" + txtsexo.Text + "', " +
                 "Telefone  = '" + txtTelefone.Text + "', " +
                 "email  = '" + txtemail.Text + "', " +
-                "CTPS  = '" + txtsexo.Text + "', " +
+                "CTPS  = '" + txtCTPS.Text + "', " +
                 "RGP  = '" + txtRGPAtual.Text + "', " +
                 "RGP_Registro  = '" + txtRGPRegistro.Text + "', " +
                 "RGP_emissor  = '" + txtRGPEmissor.Text + "', " +
