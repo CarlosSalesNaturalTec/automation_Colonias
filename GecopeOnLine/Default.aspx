@@ -56,7 +56,7 @@
                 <br />
 
                 <div>
-                  <h1><i class="fa fa-paw"></i> GECOPE </h1>
+                  <h1><i class="fa fa-ship"></i> GECOPE </h1>
                   <p>©2017 Todos os direitos reservados.</p>
                 </div>
               </div>
