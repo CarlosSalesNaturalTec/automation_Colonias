@@ -38,19 +38,15 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="Index.aspx" class="site_title"><i class="fa fa-paw"></i><span>GECOPE </span></a>
+                        <a href="Index.aspx" class="site_title"><i class="fa fa-ship"></i><span> GECOPE</span></a>
                     </div>
 
                     <div class="clearfix"></div>
 
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
-                        <div class="profile_pic">
-                            <img src="images/pesca.jpg" alt="Gecope" class="img-circle profile_img">
-                        </div>
                         <div class="profile_info">
-                            <span>Colônia,</span>
-                            <h2>Z-00 Salvador</h2>
+                            <h2><asp:Label ID="lblNomeColonia" runat="server"></asp:Label></h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -64,23 +60,10 @@
 
                                 <li><a><i class="fa fa-users"></i>Cadastros <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="#">Associados</a>
-                                            <ul class="nav child_menu">
-                                                <li><a href="Pesquisa.aspx" target="iframe_a">Pesquisa</a>
-                                                </li>
-                                                <li><a href="Cadastro_Listagem.aspx" target="iframe_a">Alterar</a>
-                                                </li>
-                                                <li><a href="CadastroAssociado.aspx" target="iframe_a">Cadastrar</a>
-                                                </li>
-
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Embarcações</a>
+                                        <li><a href="Cadastro_Listagem.aspx" target="iframe_a">Associados</a></li>
+                                        <li><a href="#">Embarcações</a></li>
                                     </ul>
                                 </li>
-
-
-
 
                                 <li><a><i class="fa fa-cube"></i>Produtos <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
@@ -168,8 +151,5 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
-
 </body>
-
-
 </html>

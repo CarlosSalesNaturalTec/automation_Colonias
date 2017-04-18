@@ -4,7 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Painel Principal</title>
+
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
+
 </head>
 <body>
      <br />

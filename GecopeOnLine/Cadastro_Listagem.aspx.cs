@@ -1,14 +1,77 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Globalization;
+using System.Text;
 
 public partial class Cadastro_Listagem : System.Web.UI.Page
 {
+    StringBuilder str = new StringBuilder();
+    int TotalDeRegistros = 0;
+
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!IsPostBack)
+        {
+            montaCabecalho();
+            dadosCorpo();
+            montaRodape();
+            Literal1.Text = str.ToString();
+        }
+    }
 
+    private void montaCabecalho()
+    {
+        string stringcomaspas = "<table id=\"tabela\" class=\"table table-striped table-hover \">" +
+            "<thead>" +
+            "<tr>" +
+            "<th>NOME</th>" +
+            "<th>APELIDO</th>" +
+            "<th>EMBARCAÇÃO</th>" +
+            "<th>CPF</th>" +
+            "<th>ID</th>" +
+            "</tr>" +
+            "</thead>" +
+            "<tbody>";
+        str.Clear();
+        str.Append(stringcomaspas);
+    }
+
+    private void dadosCorpo()
+    {
+        string datastatus = DateTime.Now.ToString("yyyy-MM-dd");
+        string stringselect = "select Nome, Apelido, Embarcacao_Nome, CPF, ID_Associado " +
+                " from Tbl_Associados  " +
+                " where ID_Colonia = " + Session["IDCol"].ToString() +
+                " order by Nome";
+
+        OperacaoBanco operacao = new OperacaoBanco();
+        System.Data.SqlClient.SqlDataReader dados = operacao.Select(stringselect);
+
+        while (dados.Read())
+        {
+            string Coluna1 = Convert.ToString(dados[0]);
+            string Coluna2 = Convert.ToString(dados[1]);
+            string Coluna3 = Convert.ToString(dados[2]);
+            string Coluna4 = Convert.ToString(dados[3]);
+            string Coluna5 = Convert.ToString(dados[4]);
+
+            string stringcomaspas = "<tr>" +
+                "<td>" + Coluna1 + "</td>" +
+                "<td>" + Coluna2 + "</td>" +
+                "<td>" + Coluna3 + "</td>" +
+                "<td>" + Coluna4 + "</td>" +
+                "<td>" + Coluna5 + "</td>" +
+                "</tr>";
+
+            str.Append(stringcomaspas);
+            TotalDeRegistros++;
+        }
+        ConexaoBancoSQL.fecharConexao();
+        Literal_Quant.Text = TotalDeRegistros.ToString();
+    }
+
+    private void montaRodape()
+    {
+        string footer = "</tbody></table>";
+        str.Append(footer);
     }
 }
