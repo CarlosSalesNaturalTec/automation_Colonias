@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Cadastro_Listagem.aspx.cs" Inherits="Cadastro_Listagem" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Associados_Listagem.aspx.cs" Inherits="Associados_Listagem" %>
 
 <!DOCTYPE html>
 

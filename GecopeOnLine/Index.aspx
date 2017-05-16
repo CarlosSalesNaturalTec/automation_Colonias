@@ -51,8 +51,6 @@
                     </div>
                     <!-- /menu profile quick info -->
 
-                    <br />
-
                     <!-- sidebar menu -->
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                         <div class="menu_section">
@@ -84,6 +82,12 @@
                                 <li><a><i class="fa fa-dollar"></i>Financeiro <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="#">Contas a Pagar</a></li>
+                                    </ul>
+                                </li>
+
+                                 <li><a><i class="fa fa-sign-out"></i>Sair <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Desconectar</a></li>
                                     </ul>
                                 </li>
 

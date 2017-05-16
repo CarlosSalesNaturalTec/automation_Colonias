@@ -6,30 +6,19 @@
 <head runat="server">
     <title>Painel Principal</title>
 
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
 
 </head>
 <body>
-     <br />
-    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/pescador.JPG" />
-    <br />
-    <h1>GECOPE</h1>
-    <h3 class="text-danger">
-        <asp:Label ID="lblColonia" runat="server" Text=""></asp:Label></h3>
-    <br />
+    <div class="w3-container w3-padding w3-center w3-text-blue">
+        <br />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/pescador.JPG" />
+        <br />
 
-    <div class ="row">
-
-    <div class="panel panel-primary col-md-4">
-        <div class="panel-heading">
-            <h3 class="panel-title">Associados Cadastrados</h3>
-        </div>
-        <div class="panel-body">
-            <asp:Label ID="lblQuant" runat="server"></asp:Label>
-        </div>
-    </div>
-
+        <h1>Bem Vindo à</h1>
+        <h1><strong>
+            <asp:Label ID="lblColonia" runat="server" Text=""></asp:Label></strong></h1>
     </div>
 </body>
 </html>

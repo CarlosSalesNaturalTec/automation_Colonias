@@ -9,6 +9,6 @@ public partial class PainelPrincipal : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-       
+        lblColonia.Text = Session["NomeCol"].ToString();
     }
 }

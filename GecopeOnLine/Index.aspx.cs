@@ -31,7 +31,9 @@ public partial class Index : System.Web.UI.Page
         }
 
         lblNomeColonia.Text = Request.QueryString["p2"];
+        Session["NomeCol"] = Request.QueryString["p2"];
         Session["IDCol"] = Request.QueryString["p3"];
+        
     }
 
 }

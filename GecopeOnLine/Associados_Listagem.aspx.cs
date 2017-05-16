@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Text;
 
-public partial class Cadastro_Listagem : System.Web.UI.Page
+public partial class Associados_Listagem : System.Web.UI.Page
 {
     StringBuilder str = new StringBuilder();
     int TotalDeRegistros = 0;
