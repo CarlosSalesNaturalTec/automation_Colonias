@@ -15,8 +15,7 @@
     <div class="w3-container w3-padding w3-center">
         <br />
         <h1>Desculpa, não podemos realizar esta tarefa agora!</h1>
-        <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
-        <h1>Tente Novamente</h1>
+        <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>        
     </div>
 </body>
 </html>

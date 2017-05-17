@@ -14,8 +14,7 @@
     <div class="w3-container w3-padding w3-center w3-text-blue">
         <br />
         <asp:Image ID="Image1" runat="server" ImageUrl="~/images/pescador.JPG" />
-        <br />
-
+        <br /><br /><br />
         <h1>Bem Vindo à</h1>
         <h1><strong>
             <asp:Label ID="lblColonia" runat="server" Text=""></asp:Label></strong></h1>

@@ -50,7 +50,7 @@
                             <input type="password" class="form-control" placeholder="Senha" required="" id="txtpwd" />
                         </div>
                         <div>
-                            <input type="button" value="ENTRAR" onclick="TentarLogin()" class="btn btn-default" />
+                            <input id="btLogin" type="button" value="ENTRAR" onclick="TentarLogin()" class="btn btn-default" />
                         </div>
 
                         <div class="clearfix"></div>
@@ -62,7 +62,7 @@
                             <br />
 
                             <div>
-                                <h1><i class="fa fa-ship"></i>GECOPE </h1>
+                                <h3><i class="fa fa-ship"></i> Gestão de Colônias</h3>
                                 <p>©2017 Todos os direitos reservados.</p>
                             </div>
                         </div>
@@ -75,7 +75,13 @@
 
     <script type="text/javascript">
 
+        document.getElementById("txtNome").focus();
+
         function TentarLogin() {
+
+            $("body").css("cursor", "progress");
+            document.getElementById("btLogin").disabled = true;
+
             $.ajax({
                 type: "POST",
                 url: "WebService.asmx/Identificador",

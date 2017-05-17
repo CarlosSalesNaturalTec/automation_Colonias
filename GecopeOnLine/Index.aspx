@@ -58,8 +58,8 @@
 
                                 <li><a><i class="fa fa-users"></i>Cadastros <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="Cadastro_Listagem.aspx" target="iframe_a">Associados</a></li>
-                                        <li><a href="#">Embarcações</a></li>
+                                        <li><a href="Associados_Listagem.aspx" target="iframe_a">Associados</a></li>
+                                        <li><a href="Embarcacoes_Listagem.aspx" target="iframe_a">Embarcações</a></li>
                                     </ul>
                                 </li>
 
