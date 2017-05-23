@@ -144,7 +144,7 @@
     </div>
 
     <div class="w3-section">
-        <input id="btSalvar" type="button" class="w3-button w3-block w3-light-green w3-hover-green w3-section w3-padding" onclick="Salvar();" value="Salvar" />
+        <input id="btSalvar" type="button" class="w3-button w3-block w3-light-green w3-hover-green w3-section w3-padding" onclick="SalvarRegistro()" value="Salvar" />
     </div>
 
     <script type="text/javascript" src="scripts/codeEmbarcacoes.js"></script>

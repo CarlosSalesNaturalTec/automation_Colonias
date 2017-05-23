@@ -173,10 +173,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Properties\PublishProfiles\Gecope.pubxml" />
+    <None Include="Properties\PublishProfiles\gecope - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\gecope - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="res\logo_fepesba.png" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />

@@ -70,6 +70,8 @@ function abrevTXT() {
 
 function SalvarRegistro() {
 
+    $("body").css("cursor", "progress");
+
     document.getElementById("btSalvar").style.cursor = "progress";
 
     var v1 = document.getElementById("input_nome").value
@@ -84,8 +86,8 @@ function SalvarRegistro() {
     var v7 = document.getElementById("input_Especif").value
     var v8 = document.getElementById("input_captania").value
     var v9 = document.getElementById("input_licenca").value
-    var v10 = document.getElementById("input_TipoPesca").value
-    var v11 = document.getElementById("input_vencimento").value
+    var v10 = document.getElementById("input_vencimento").value
+    var v11 = document.getElementById("input_TipoPesca").value
 
     var v12 = document.getElementById("input_tripulantes").value
     var v13 = document.getElementById("input_Comprim").value
@@ -106,7 +108,9 @@ function SalvarRegistro() {
     $.ajax({
         type: "POST",
         url: "WebService.asmx/EmbarcacaoSalvar",
-        data: '{param1: "' + v1 + '", param2: "' + v2 + '", param3: "' + v3 + '", param4: "' + v4 + '", param5: "' + v5 + '", param6: "' + v6 + '" }',
+        data: '{param1: "' + v1 + '", param2: "' + v2 + '", param3: "' + v3 + '", param4: "' + v4 + '", param5: "' + v5 + '", param6: "' + v6 +
+            '",param7: "' + v7 + '", param8: "' + v8 + '", param9: "' + v9 + '", param10: "' + v10 + '", param11: "' + v11 + '", param12: "' + v12 +
+            '",param13: "' + v13 + '", param14: "' + v14 + '", param15: "' + v15 + '", param16: "' + v16 + '", param17: "' + v17 + '", param18: "' + v18 + '"}',
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {
