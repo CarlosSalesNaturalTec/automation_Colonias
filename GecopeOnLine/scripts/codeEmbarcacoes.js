@@ -98,6 +98,7 @@ function SalvarRegistro() {
     var v17 = document.getElementById("select_casco").value
     var v18 = document.getElementById("select_combust").value
 
+    var v19 = "path foto";
 
     if (v1 == "") {
         alert("Informe Nome da Embarcação");
@@ -110,7 +111,8 @@ function SalvarRegistro() {
         url: "WebService.asmx/EmbarcacaoSalvar",
         data: '{param1: "' + v1 + '", param2: "' + v2 + '", param3: "' + v3 + '", param4: "' + v4 + '", param5: "' + v5 + '", param6: "' + v6 +
             '",param7: "' + v7 + '", param8: "' + v8 + '", param9: "' + v9 + '", param10: "' + v10 + '", param11: "' + v11 + '", param12: "' + v12 +
-            '",param13: "' + v13 + '", param14: "' + v14 + '", param15: "' + v15 + '", param16: "' + v16 + '", param17: "' + v17 + '", param18: "' + v18 + '"}',
+            '",param13: "' + v13 + '", param14: "' + v14 + '", param15: "' + v15 + '", param16: "' + v16 + '", param17: "' + v17 +
+            '", param18: "' + v18 + '", param19: "' + v19 + '"}',
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {

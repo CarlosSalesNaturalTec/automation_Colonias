@@ -53,16 +53,17 @@ public class WebService : System.Web.Services.WebService
     public string EmbarcacaoSalvar(string param1, string param2, string param3, string param4, string param5, 
             string param6, string param7, string param8, string param9, string param10, 
             string param11, string param12, string param13, string param14, string param15,
-            string param16, string param17, string param18)
+            string param16, string param17, string param18, string param19)
     {
         string url = "Sorry.aspx";
         OperacaoBanco operacao = new OperacaoBanco();
         bool inserir = operacao.Insert("INSERT INTO Tbl_Embarcacoes (Nome, Tipo , Ano_Construcao , Calado , Denominacao, " +
             "abreviatura , Especificacao,Numero_Capitania ,Licenca_Pesca ,Licenca_Vencimento , Tipo_Pesca , Tripulantes, " +
             "Comprimento, Arqueacao ,Potencia_motor , Propulsao_motor , Material_casco , Combustivel , FotoURI ) " +
-            "VALUES ('" + param1 + "', '" + param2 + "', '" + param3 + "', '" + param4 + "', '" + param5 + "', '" + param6 + 
+            "values ('" + param1 + "', '" + param2 + "', '" + param3 + "', '" + param4 + "', '" + param5 + "', '" + param6 + 
             "', '" + param7 + "', '" + param8 + "', '" + param9 + "', '" + param10 + "', '" + param11 + "', '" + param12 +
-            "', '" + param13 + "', '" + param14 + "', '" + param15 + "', '" + param16 + "', '" + param17 + "', '" + param18 + "')");
+            "', '" + param13 + "', '" + param14 + "', '" + param15 + "', '" + param16 + "', '" + param17 + 
+            "', '" + param18 + "', '" + param19 + "')");
         ConexaoBancoSQL.fecharConexao();
         if (inserir == true)
         {
