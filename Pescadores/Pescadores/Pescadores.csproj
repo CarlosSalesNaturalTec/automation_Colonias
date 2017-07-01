@@ -149,7 +149,9 @@
     <Content Include="midias\logo.png" />
     <Content Include="midias\pescador.JPG" />
     <Content Include="Painel.aspx" />
+    <Content Include="Pesquisa2.aspx" />
     <Content Include="Pesquisa.aspx" />
+    <Content Include="RedirectPesquisa.aspx" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\webcam.js" />
     <Content Include="Sorry.aspx" />
@@ -162,11 +164,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="WebService1.asmx" />
-    <None Include="Properties\PublishProfiles\Pescadores9386.pubxml" />
+    <None Include="Properties\PublishProfiles\Pescadores9386 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Pescadores9386 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -281,12 +281,26 @@
       <DependentUpon>Painel.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Pesquisa2.aspx.cs">
+      <DependentUpon>Pesquisa2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pesquisa2.aspx.designer.cs">
+      <DependentUpon>Pesquisa2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pesquisa.aspx.cs">
       <DependentUpon>Pesquisa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pesquisa.aspx.designer.cs">
       <DependentUpon>Pesquisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedirectPesquisa.aspx.cs">
+      <DependentUpon>RedirectPesquisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedirectPesquisa.aspx.designer.cs">
+      <DependentUpon>RedirectPesquisa.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sorry.aspx.cs">
       <DependentUpon>Sorry.aspx</DependentUpon>
@@ -377,7 +391,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49522</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

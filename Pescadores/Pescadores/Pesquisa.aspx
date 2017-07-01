@@ -19,15 +19,13 @@
 	    $(document).ready(function(){
 	        $('#tabelaCli').DataTable({
 	            "language": {
-	                "processing": "Aguarde! Processando...",
-	                "loadingRecords": "Aguarde! Carregando dados...",
-		            "lengthMenu": "Mostrando _MENU_ registros por página",
-		            "zeroRecords": "Nada encontrado",
-		            "info": "Total de Registros:  _MAX_ ",
-		            "infoEmpty": "Nenhum registro disponível",
-		            "infoFiltered": "(filtrado)",
-		            "search": "Pesquisa"
-		        }
+	                "lengthMenu": "Mostrando _MENU_ registros por página",
+	                "zeroRecords": "Nada encontrado",
+	                "info": " _MAX_ registros no total",
+	                "infoEmpty": "Nenhum registro disponível",
+	                "infoFiltered": "(filtrado de _MAX_ registros no total)",
+	                "search": "Pesquisa:"
+	            }
 		    });
 		});
 	    </script>
